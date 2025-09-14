@@ -114,28 +114,37 @@ body { margin: 0; }
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 
-  // --- ADD THIS NEW CODE TO DEFER GOOGLE TAG ---
-  const loadGtagScript = () => {
+  let gtagLoaded = false;
+const loadGtagScript = () => {
+    if (gtagLoaded) {
+        return; // Exit if the script has already been triggered
+    }
+    gtagLoaded = true; // Mark as loaded to prevent running twice
+    
     const gtagScript = document.createElement('script');
     gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17509855816';
     gtagScript.async = true;
 
     const inlineGtagScript = document.createElement('script');
     inlineGtagScript.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-17509855816');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-17509855816');
     `;
     
     document.head.appendChild(gtagScript);
     document.head.appendChild(inlineGtagScript);
-  };
+    console.log('Google Tag loaded.'); // Optional: for testing
+};
 
-  window.addEventListener('scroll', loadGtagScript, { once: true, passive: true });
-  window.addEventListener('mousemove', loadGtagScript, { once: true, passive: true });
-  window.addEventListener('touchstart', loadGtagScript, { once: true, passive: true });
-  // --- END OF NEW CODE ---
+// Load the script on the first user interaction
+window.addEventListener('scroll', loadGtagScript, { once: true, passive: true });
+window.addEventListener('mousemove', loadGtagScript, { once: true, passive: true });
+window.addEventListener('touchstart', loadGtagScript, { once: true, passive: true });
+
+// OR, if no interaction after 4 seconds, load it anyway as a fallback
+setTimeout(loadGtagScript, 4000);
 
 
   // --- Start of your UI and animation code ---
