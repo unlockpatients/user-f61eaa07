@@ -143,8 +143,8 @@ window.addEventListener('scroll', loadGtagScript, { once: true, passive: true })
 window.addEventListener('mousemove', loadGtagScript, { once: true, passive: true });
 window.addEventListener('touchstart', loadGtagScript, { once: true, passive: true });
 
-// OR, if no interaction after 4 seconds, load it anyway as a fallback
-setTimeout(loadGtagScript, 4000);
+// OR, if no interaction after 2 seconds, load it anyway as a fallback
+setTimeout(loadGtagScript, 2000);
 
 
   // --- Start of your UI and animation code ---
