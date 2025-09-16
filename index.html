@@ -1363,22 +1363,23 @@ document.addEventListener("DOMContentLoaded", function() {
         if (q) q.innerHTML = faq.question;
         if (a) a.innerHTML = faq.answer;
       });
-      const updatedFaqQuestions = document.querySelectorAll('.faq-question');
-      if (updatedFaqQuestions.length > 0) {
-        updatedFaqQuestions.forEach(item => {
-          item.addEventListener('click', () => {
-            const faqItem = item.parentElement;
-            const faqToggle = item.querySelector('.faq-toggle');
-            faqItem.classList.toggle('active');
-            if (faqItem.classList.contains('active')) {
-              faqToggle.textContent = '−';
-            } else {
-              faqToggle.textContent = '+';
-            }
-          });
-        });
-      }
     }
+  }
+  // --- All original site functionality below this line ---
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  if (faqQuestions.length > 0) {
+    faqQuestions.forEach(item => {
+      item.addEventListener('click', () => {
+        const faqItem = item.parentElement;
+        const faqToggle = item.querySelector('.faq-toggle');
+        faqItem.classList.toggle('active');
+        if (faqItem.classList.contains('active')) {
+          faqToggle.textContent = '−';
+        } else {
+          faqToggle.textContent = '+';
+        }
+      });
+    });
   }
   if (heroContent) {
     heroContent.classList.add('visible');
