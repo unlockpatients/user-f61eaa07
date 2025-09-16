@@ -1297,8 +1297,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Get the ad group theme from the URL (e.g., 'fever-flu')
   const params = new URLSearchParams(window.location.search);
   const adgroup = params.get('adgroup');
-  const heroContent = document.getElementById('i7ptf-2'); 
-
+  const heroContent = document.getElementById('i7ptf-2');
   // Check if content for that ad group exists in our object
   if (adgroup && adgroupContent[adgroup]) {
     const content = adgroupContent[adgroup];
@@ -1339,10 +1338,13 @@ document.addEventListener("DOMContentLoaded", function() {
       if (servicesSubheadline && content.servicesSubheadline) servicesSubheadline.innerHTML = content.servicesSubheadline;
       content.services.forEach((service, i) => {
         const index = i + 1;
-        const icon = document.getElementById(`service-icon-${index}`);
+        const icon = document.getElementById(`service-icon-${index}
+`);
         // --- FIX IS HERE ---
-        const h3 = document.getElementById(`service-h3-${index}`);
-        const p = document.getElementById(`service-p-${index}`);
+        const h3 = document.getElementById(`service-h3-${index}
+`);
+        const p = document.getElementById(`service-p-${index}
+`);
         // --- END FIX ---
         if (icon) icon.src = service.icon;
         if (h3) h3.innerHTML = service.title;
@@ -1351,18 +1353,20 @@ document.addEventListener("DOMContentLoaded", function() {
                               );
     }
     // Update FAQ Section
-    if (content.faqs && content.faqs.length > 0) {
-      const faqHeadline = document.getElementById('faq-headline');
-      if (faqHeadline && content.faqHeadline) faqHeadline.innerHTML = content.faqHeadline;
-
-      content.faqs.forEach((faq, i) => {
-        const index = i + 1;
-        const q = document.getElementById(`faq-q-${index}`);
-        const a = document.getElementById(`faq-a-${index}`);
-        if (q) q.innerHTML = faq.question;
-        if (a) a.innerHTML = faq.answer;
-      });
-    }
+    if (content.faqs && content.faqs.length > 0) {
+      const faqHeadline = document.getElementById('faq-headline');
+      if (faqHeadline && content.faqHeadline) faqHeadline.innerHTML = content.faqHeadline;
+      content.faqs.forEach((faq, i) => {
+        const index = i + 1;
+        const q = document.getElementById(`faq-q-${index}
+`);
+        const a = document.getElementById(`faq-a-${index}
+`);
+        if (q) q.innerHTML = faq.question;
+        if (a) a.innerHTML = faq.answer;
+      }
+                          );
+    }
   }
   // --- All original site functionality below this line ---
   const faqQuestions = document.querySelectorAll('.faq-question');
@@ -1374,11 +1378,14 @@ document.addEventListener("DOMContentLoaded", function() {
         faqItem.classList.toggle('active');
         if (faqItem.classList.contains('active')) {
           faqToggle.textContent = '−';
-        } else {
+        }
+        else {
           faqToggle.textContent = '+';
         }
-      });
-    });
+      }
+                           );
+    }
+                        );
   }
   if (heroContent) {
     heroContent.classList.add('visible');
@@ -1470,7 +1477,6 @@ gtag('config', 'AW-17509855816');
     showSlide(currentSlide);
     slideInterval = setInterval(nextSlide, 5000);
   }
-  
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
