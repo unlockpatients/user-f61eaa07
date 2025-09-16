@@ -1348,55 +1348,69 @@ document.addEventListener("DOMContentLoaded", function() {
       }
                               );
     }
-    // Update FAQ Section
-if (content.faqs && content.faqs.length > 0) {
-    const faqHeadline = document.getElementById('faq-headline');
-    if (faqHeadline && content.faqHeadline) faqHeadline.innerHTML = content.faqHeadline;
-
-    const faqContainer = document.querySelector('.faq-container');
-    if (faqContainer) {
-        faqContainer.innerHTML = '';  // Clear existing FAQs
-
-        content.faqs.forEach((faq, i) => {
-            const index = i + 1;
-            // Create new faq-item dynamically
-            const faqItem = document.createElement('div');
-            faqItem.id = `faq-item-${index}`;
-            faqItem.className = 'faq-item';
-
-            const faqQuestion = document.createElement('div');
-            faqQuestion.className = 'faq-question';
-
-            const h3 = document.createElement('h3');
-            h3.id = `faq-q-${index}`;
-            h3.innerHTML = faq.question;
-
-            const toggle = document.createElement('span');
-            toggle.className = 'faq-toggle';
-            toggle.textContent = '+';
-
-            faqQuestion.appendChild(h3);
-            faqQuestion.appendChild(toggle);
-
-            const faqAnswer = document.createElement('div');
-            faqAnswer.className = 'faq-answer';
-
-            const p = document.createElement('p');
-            p.id = `faq-a-${index}`;
-            p.innerHTML = faq.answer;
-
-            faqAnswer.appendChild(p);
-
-            faqItem.appendChild(faqQuestion);
-            faqItem.appendChild(faqAnswer);
-
-            faqContainer.appendChild(faqItem);
-        });
-    }
+   function setupFaqToggles() {
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(item => {
+    item.removeEventListener('click', toggleFaq); // Prevent duplicate listeners
+    item.addEventListener('click', toggleFaq);
+  });
 }
-  if (heroContent) {
-    heroContent.classList.add('visible');
+
+function toggleFaq() {
+  const faqItem = this.parentElement;
+  const faqToggle = this.querySelector('.faq-toggle');
+  faqItem.classList.toggle('active');
+  faqToggle.textContent = faqItem.classList.contains('active') ? '−' : '+';
+}
+
+// Call initially
+setupFaqToggles();
+
+// In the ad group content update, call setupFaqToggles after updating FAQs
+if (content.faqs && content.faqs.length > 0) {
+  const faqHeadline = document.getElementById('faq-headline');
+  if (faqHeadline && content.faqHeadline) faqHeadline.innerHTML = content.faqHeadline;
+
+  const faqContainer = document.querySelector('.faq-container');
+  if (faqContainer) {
+    faqContainer.innerHTML = ''; // Clear existing FAQs
+    content.faqs.forEach((faq, i) => {
+      const index = i + 1;
+      const faqItem = document.createElement('div');
+      faqItem.id = `faq-item-${index}`;
+      faqItem.className = 'faq-item';
+
+      const faqQuestion = document.createElement('div');
+      faqQuestion.className = 'faq-question';
+
+      const h3 = document.createElement('h3');
+      h3.id = `faq-q-${index}`;
+      h3.innerHTML = faq.question;
+
+      const toggle = document.createElement('span');
+      toggle.className = 'faq-toggle';
+      toggle.textContent = '+';
+
+      faqQuestion.appendChild(h3);
+      faqQuestion.appendChild(toggle);
+
+      const faqAnswer = document.createElement('div');
+      faqAnswer.className = 'faq-answer';
+
+      const p = document.createElement('p');
+      p.id = `faq-a-${index}`;
+      p.innerHTML = faq.answer;
+
+      faqAnswer.appendChild(p);
+
+      faqItem.appendChild(faqQuestion);
+      faqItem.appendChild(faqAnswer);
+
+      faqContainer.appendChild(faqItem);
+    });
+    setupFaqToggles(); // Re-attach event listeners after adding new FAQs
   }
+}
   // --- All original site functionality below this line ---
   let gtagLoaded = false;
   const loadGtagScript = () => {
