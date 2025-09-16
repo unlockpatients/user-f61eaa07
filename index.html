@@ -1297,6 +1297,8 @@ document.addEventListener("DOMContentLoaded", function() {
   // Get the ad group theme from the URL (e.g., 'fever-flu')
   const params = new URLSearchParams(window.location.search);
   const adgroup = params.get('adgroup');
+  const heroContent = document.getElementById('i7ptf-2'); 
+
   // Check if content for that ad group exists in our object
   if (adgroup && adgroupContent[adgroup]) {
     const content = adgroupContent[adgroup];
