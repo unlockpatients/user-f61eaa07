@@ -1339,13 +1339,10 @@ document.addEventListener("DOMContentLoaded", function() {
       if (servicesSubheadline && content.servicesSubheadline) servicesSubheadline.innerHTML = content.servicesSubheadline;
       content.services.forEach((service, i) => {
         const index = i + 1;
-        const icon = document.getElementById(`service-icon-${index}
-`);
+        const icon = document.getElementById(`service-icon-${index}`);
         // --- FIX IS HERE ---
-        const h3 = document.getElementById(`service-h3-${index}
-`);
-        const p = document.getElementById(`service-p-${index}
-`);
+        const h3 = document.getElementById(`service-h3-${index}`);
+        const p = document.getElementById(`service-p-${index}`);
         // --- END FIX ---
         if (icon) icon.src = service.icon;
         if (h3) h3.innerHTML = service.title;
@@ -1533,9 +1530,7 @@ gtag('config', 'AW-17509855816');
     const match = cleaned.match(/^(1)?(\d{3})(\d{3})(\d{4})$/);
     if (match) {
       const [, , areaCode, prefix, lineNumber] = match;
-      return `Call: (${areaCode}
-) ${prefix}
-- ${lineNumber}
+      return `Call: (${areaCode}) ${prefix} - ${lineNumber}
 `;
     }
     return phoneNumber;
@@ -1545,9 +1540,7 @@ gtag('config', 'AW-17509855816');
     const match = cleaned.match(/^(1)?(\d{3})(\d{3})(\d{4})$/);
     if (match) {
       const [, , areaCode, prefix, lineNumber] = match;
-      return `(${areaCode}
-) ${prefix}
-- ${lineNumber}
+      return `(${areaCode}) ${prefix} - ${lineNumber}
 `;
     }
     return phoneNumber;
