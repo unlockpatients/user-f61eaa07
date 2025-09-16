@@ -1538,9 +1538,7 @@ gtag('config', 'AW-17509855816');
     const match = cleaned.match(/^(1)?(\d{3})(\d{3})(\d{4})$/);
     if (match) {
       const [, , areaCode, prefix, lineNumber] = match;
-      return `Call: (${areaCode}
-) ${prefix}
-- ${lineNumber}
+      return `Call: (${areaCode}) ${prefix} - ${lineNumber}
 `;
     }
     return phoneNumber;
@@ -1550,9 +1548,7 @@ gtag('config', 'AW-17509855816');
     const match = cleaned.match(/^(1)?(\d{3})(\d{3})(\d{4})$/);
     if (match) {
       const [, , areaCode, prefix, lineNumber] = match;
-      return `(${areaCode}
-) ${prefix}
-- ${lineNumber}
+      return `(${areaCode}) ${prefix} - ${lineNumber}
 `;
     }
     return phoneNumber;
