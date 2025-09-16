@@ -331,114 +331,700 @@
 <script>
   // This object holds all the unique text for your ad groups
   const adgroupContent = {
-    'after-hours-evening': {
-      title: "After-Hours Pediatrician | WonderKidz Pediatrics | Hollywood, FL",
-      headline: "After-Hours & Evening Pediatric Care",
-      subheadline: "Get peace of mind with our on-call pediatricians for after-school illnesses and urgent needs.",
-      altText: "A dedicated pediatrician providing after-hours care for a child at the Hollywood clinic.",
-      ctaText: "Call Our After-Hours Team",
-      servicesHeadline: "Our After-Hours Services",
-      servicesSubheadline: "Get the care you need, when you need it.",
-      services: [
-        { title: "Evening Sick Visits", description: "For coughs, fevers, and illnesses that happen after school.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
-        { title: "On-Call Doctor Access", description: "Direct access to our pediatric team for questions that can't wait.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
-        { title: "Avoid the ER", description: "Get expert pediatric care without the long wait times and high cost of an ER visit.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
-        { title: "Injury Consultations", description: "Guidance for minor falls, cuts, and sprains that happen during evening play.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
-      ],
-      faqHeadline: "After-Hours Care Questions",
-      faqs: [
-        { question: "What are your after-hours and evening times?", answer: "Our team is available for calls after our regular office hours. We also offer extended clinic hours on Mondays and Thursdays until 8:00 PM for scheduled appointments." },
-        { question: "Should I go to the ER or call you after hours?", answer: "For non-life-threatening issues like fever, vomiting, or minor injuries, call us first. We can often provide guidance over the phone or see you quickly, saving you an ER visit. For emergencies like difficulty breathing or a serious injury, call 911." },
-        { question: "Is there a fee for calling after hours?", answer: "We provide on-call phone access as a service to our established patients. There is typically no extra charge for a simple phone consultation." }
-      ]
-    },
-    'fever-flu': {
-      title: "Pediatric Fever & Flu Care | WonderKidz Pediatrics | Hollywood, FL",
-      headline: "Expert Care for Your Child's Fever & Flu",
-      subheadline: "We offer rapid flu tests and effective treatment to help your little one feel better fast.",
-      altText: "Doctor providing fast diagnosis for a child with a fever at WonderKidz Pediatrics.",
-      ctaText: "Call Our Fever Experts Now",
-      servicesHeadline: "Our Fever & Flu Services",
-      servicesSubheadline: "Fast diagnosis and relief for your child.",
-      services: [
-        { title: "Rapid Flu & Strep Tests", description: "Get fast, accurate results in minutes to determine the cause of their illness.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
-        { title: "Effective Fever Reduction", description: "Our doctors provide guidance and treatment to safely manage your child's high fever.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
-        { title: "Symptom Relief Plans", description: "We create a personalized care plan to soothe coughs, aches, and other flu symptoms.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
-        { title: "Hydration & Nutrition Advice", description: "Proper care at home is key. We'll guide you on keeping your child comfortable and hydrated.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
-      ],
-      faqHeadline: "Fever & Flu Questions",
-      faqs: [
-        { question: "When should I bring my child in for a fever?", answer: "We recommend calling us if a fever is over 102°F (39°C), lasts more than two days, or is accompanied by other severe symptoms like lethargy or a rash. For infants under 3 months, any fever is a reason to call immediately." },
-        { question: "Do you offer rapid flu tests?", answer: "Yes, we provide rapid influenza tests with results available during your visit, allowing us to begin the right treatment immediately if necessary." },
-        { question: "What is the treatment for the flu?", answer: "Treatment often involves rest, fluids, and fever-reducing medication. In some cases, an antiviral medication like Tamiflu may be prescribed, which is most effective when started within 48 hours of the first symptoms." }
-      ]
-    },
-    'newborn-doctor': {
-      title: "Newborn Doctor in Hollywood, FL | WonderKidz Pediatrics",
-      headline: "Expert & Gentle Care for Your Newborn",
-      subheadline: "Congratulations! Our pediatricians specialize in newborn care for a healthy, happy start.",
-      altText: "Compassionate pediatrician providing expert newborn care in Hollywood.",
-      ctaText: "Schedule Newborn's First Visit",
-      servicesHeadline: "Comprehensive Newborn Care",
-      servicesSubheadline: "Supporting you and your baby from day one.",
-      services: [
-        { title: "First Well-Baby Visits", description: "We monitor your baby's growth, feeding, and development in those critical first weeks.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
-        { title: "Lactation & Feeding Support", description: "Our team provides guidance and resources for breastfeeding and formula feeding.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
-        { title: "New Parent Guidance", description: "We're here to answer all your questions about sleep, safety, and caring for your new baby.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
-        { title: "Gentle Vaccinations", description: "We provide your baby's first immunizations in a calm and comforting environment.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" }
-      ],
-      faqHeadline: "Newborn Care Questions",
-      faqs: [
-        { question: "When should my newborn have their first doctor visit?", answer: "Your newborn should typically have their first visit 3-5 days after birth, or as recommended by your hospital. We will check their weight, feeding, and overall health." },
-        { question: "Do you offer prenatal 'meet and greet' appointments?", answer: "Absolutely! We encourage expecting parents to schedule a free prenatal visit to meet Dr. V, see our office, and ensure we're the right fit for your growing family." },
-        { question: "What should I bring to my newborn's first appointment?", answer: "Please bring any discharge paperwork from the hospital, your baby's insurance information, and a list of any questions or concerns you may have." }
-      ]
-    },
-    // ** NOTE: An entry for EVERY ad group from your campaign would be generated here following the same detailed structure **
-    // Due to length limitations, a few more examples are provided below. The full implementation would include all 30+ ad groups.
-    'sports-physicals': {
-        title: "Youth Sports Physicals | WonderKidz Pediatrics | Hollywood, FL",
-        headline: "Sports Physicals to Get Them Cleared to Play",
-        subheadline: "Ensure your young athlete is safe for the season with our comprehensive sports physicals.",
-        altText: "A doctor performing a sports physical for a young athlete.",
-        ctaText: "Book a Sports Physical",
-        servicesHeadline: "Our Sports Physical Services",
-        servicesSubheadline: "Ensuring your athlete is healthy and ready for their sport.",
-        services: [
-            { title: "Comprehensive Exams", description: "We assess vitals, joints, and flexibility to ensure your child is safe to play.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
-            { title: "Form Completion", description: "We are familiar with all local school and league forms and will complete them during your visit.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
-            { title: "Injury Prevention Tips", description: "We provide personalized advice to help your young athlete avoid common sports injuries.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
-            { title: "Same-Day Appointments", description: "Don't wait until the last minute before tryouts. We offer convenient, fast appointments.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
-        ],
-        faqHeadline: "Sports Physical Questions",
-        faqs: [
-            { question: "What does a sports physical include?", answer: "A sports physical, or pre-participation physical examination (PPE), includes a review of the athlete's medical history and a physical exam to determine if it's safe for them to participate in a particular sport." },
-            { question: "Is a sports physical the same as an annual physical?", answer: "No. A sports physical focuses on health history and an exam relevant to sports participation. An annual well-child exam is more comprehensive, covering all aspects of your child's health, development, and immunizations." },
-            { question: "How long is a sports physical valid for?", answer: "Typically, sports physicals are valid for one year. Most school districts and sports leagues require a new physical before the start of each new season." }
-        ]
-    },
-    'accepting-new-patients': {
-        title: "Pediatrician Accepting New Patients | WonderKidz Pediatrics",
-        headline: "Now Accepting New Patients in Hollywood",
-        subheadline: "Join our pediatric family! We're excited to welcome you to our 5-star rated practice.",
-        altText: "A pediatrician warmly welcoming a new family to WonderKidz Pediatrics.",
-        ctaText: "Schedule a New Patient Visit",
-        servicesHeadline: "Getting Started Is Easy",
-        servicesSubheadline: "We make joining our practice simple and stress-free.",
-        services: [
-            { title: "Free Meet & Greet", description: "Schedule a complimentary visit to meet Dr. V and ensure our practice is the right fit for your family.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
-            { title: "Easy Record Transfers", description: "Our team will handle the process of requesting your child's medical records from your previous doctor.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
-            { title: "Insurance Verification", description: "We'll help you verify your insurance coverage and understand your benefits before your first visit.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
-            { title: "First Visit Scheduling", description: "We offer convenient appointment times for your child's first well-child visit or sick visit with us.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
-        ],
-        faqHeadline: "New Patient Questions",
-        faqs: [
-            { question: "What should I bring to my child's first appointment?", answer: "Please bring your child's insurance card, all immunization records, and any relevant medical history from previous providers. Arriving 15 minutes early can help with paperwork." },
-            { question: "How do I transfer my child's medical records?", answer: "Simply sign a medical records release form at our office, and our staff will take care of faxing the request and ensuring we receive the records from your previous pediatrician." },
-            { question: "What insurance plans do you accept?", answer: "We accept most major insurance plans, including Aetna, Cigna, and United Healthcare. Please call our office to verify your specific plan before your first visit." }
-        ]
-    }
-  };
+  'after-hours-evening': {
+    title: "After-Hours Pediatrician | WonderKidz Pediatrics | Hollywood, FL",
+    headline: "After-Hours & Evening Pediatric Care",
+    subheadline: "Get peace of mind with our on-call pediatricians for after-school illnesses and urgent needs.",
+    altText: "A dedicated pediatrician providing after-hours care for a child at the Hollywood clinic.",
+    ctaText: "Call Our After-Hours Team",
+    servicesHeadline: "Our After-Hours Services",
+    servicesSubheadline: "Get the care you need, when you need it.",
+    services: [
+      { title: "Evening Sick Visits", description: "For coughs, fevers, and illnesses that happen after school.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "On-Call Doctor Access", description: "Direct access to our pediatric team for questions that can't wait.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Avoid the ER", description: "Get expert pediatric care without the long wait times and high cost of an ER visit.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Injury Consultations", description: "Guidance for minor falls, cuts, and sprains that happen during evening play.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
+    ],
+    faqHeadline: "After-Hours Care Questions",
+    faqs: [
+      { question: "What are your after-hours and evening times?", answer: "Our team is available for calls after our regular office hours. We also offer extended clinic hours on Mondays and Thursdays until 8:00 PM for scheduled appointments." },
+      { question: "Should I go to the ER or call you after hours?", answer: "For non-life-threatening issues like fever, vomiting, or minor injuries, call us first. We can often provide guidance over the phone or see you quickly, saving you an ER visit. For emergencies like difficulty breathing or a serious injury, call 911." },
+      { question: "Is there a fee for calling after hours?", answer: "We provide on-call phone access as a service to our established patients. There is typically no extra charge for a simple phone consultation." }
+    ]
+  },
+  'fever-flu': {
+    title: "Pediatric Fever & Flu Care | WonderKidz Pediatrics | Hollywood, FL",
+    headline: "Expert Care for Your Child's Fever & Flu",
+    subheadline: "We offer rapid flu tests and effective treatment to help your little one feel better fast.",
+    altText: "Doctor providing fast diagnosis for a child with a fever at WonderKidz Pediatrics.",
+    ctaText: "Call Our Fever Experts Now",
+    servicesHeadline: "Our Fever & Flu Services",
+    servicesSubheadline: "Fast diagnosis and relief for your child.",
+    services: [
+      { title: "Rapid Flu & Strep Tests", description: "Get fast, accurate results in minutes to determine the cause of their illness.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Effective Fever Reduction", description: "Our doctors provide guidance and treatment to safely manage your child's high fever.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Symptom Relief Plans", description: "We create a personalized care plan to soothe coughs, aches, and other flu symptoms.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Hydration & Nutrition Advice", description: "Proper care at home is key. We'll guide you on keeping your child comfortable and hydrated.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
+    ],
+    faqHeadline: "Fever & Flu Questions",
+    faqs: [
+      { question: "When should I bring my child in for a fever?", answer: "We recommend calling us if a fever is over 102°F (39°C), lasts more than two days, or is accompanied by other severe symptoms. For infants under 3 months, any fever is a reason to call immediately." },
+      { question: "Do you offer rapid flu tests?", answer: "Yes, we provide rapid influenza tests with results available during your visit, allowing us to begin the right treatment immediately if necessary." },
+      { question: "What is the treatment for the flu?", answer: "Treatment often involves rest, fluids, and fever-reducing medication. In some cases, an antiviral medication may be prescribed, which is most effective when started within 48 hours of the first symptoms." }
+    ]
+  },
+  'infections': {
+    title: "Ear Infection & Strep Testing | WonderKidz Pediatrics | Hollywood, FL",
+    headline: "Relief for Ear Infections, Strep & Pink Eye",
+    subheadline: "Our doctors provide fast diagnosis and treatment for common childhood infections.",
+    altText: "Pediatrician examining a child's ear for an infection at our Hollywood clinic.",
+    ctaText: "Get a Fast Diagnosis Now",
+    servicesHeadline: "Infection Diagnosis & Treatment",
+    servicesSubheadline: "Fast relief for common childhood illnesses.",
+    services: [
+      { title: "Rapid Strep Testing", description: "Get accurate results in minutes for sore throats to start treatment right away.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Ear Infection Diagnosis", description: "Expert examination to determine the cause of ear pain and provide effective relief.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Pink Eye (Conjunctivitis)", description: "Gentle care and prescriptions to quickly treat contagious pink eye and prevent its spread.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Same-Day Prescriptions", description: "If an antibiotic is needed, we can send the prescription to your pharmacy immediately.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
+    ],
+    faqHeadline: "Childhood Infection Questions",
+    faqs: [
+      { question: "How do I know if my child has an ear infection?", answer: "Common signs include pulling at the ears, fever, fussiness, and difficulty sleeping. Our doctors can confirm with a quick, painless look inside the ear." },
+      { question: "Do you offer rapid strep tests?", answer: "Yes, we perform a quick throat swab with results available in just a few minutes, so we can determine if antibiotics are necessary for strep throat." },
+      { question: "Is pink eye contagious?", answer: "Yes, bacterial and viral pink eye are very contagious. It's important to see a doctor for proper diagnosis and treatment to prevent it from spreading." }
+    ]
+  },
+  'rashes': {
+    title: "Pediatric Rash Treatment | WonderKidz Pediatrics | Hollywood, FL",
+    headline: "Expert Diagnosis for Your Child's Rash",
+    subheadline: "From eczema to hives, we provide compassionate care to soothe irritated skin.",
+    altText: "Doctor providing expert diagnosis for a child's skin rash in a caring environment.",
+    ctaText: "Book a Skin Consultation",
+    servicesHeadline: "Skin Condition Services",
+    servicesSubheadline: "Get answers and relief for your child's rash.",
+    services: [
+      { title: "Accurate Rash Diagnosis", description: "Don't guess. We identify the cause of the rash, from viral to allergic, for effective treatment.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Eczema Management", description: "We create long-term care plans to manage eczema flare-ups and keep skin healthy.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "Allergy Testing Referrals", description: "If we suspect an allergy is the cause, we can provide referrals to trusted local allergists.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Fast Itch Relief", description: "Our priority is to provide treatment that soothes your child's discomfort and irritated skin quickly.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" }
+    ],
+    faqHeadline: "Questions About Rashes",
+    faqs: [
+      { question: "When is a rash a sign of something serious?", answer: "You should call us immediately if a rash is accompanied by a high fever, difficulty breathing, or appears as purple spots that look like bruises. Most rashes are not emergencies, but it's always best to be sure." },
+      { question: "What's the difference between eczema and hives?", answer: "Eczema is typically a chronic condition causing dry, itchy patches. Hives are raised, red welts that appear suddenly, often due to an allergic reaction, and usually disappear within hours or days." },
+      { question: "How can I soothe my child's itchy skin at home?", answer: "Cool compresses, oatmeal baths, and keeping their fingernails short can help. Avoid harsh soaps and dress them in soft, breathable fabrics. It's important to get a diagnosis to ensure you're using the right approach." }
+    ]
+  },
+  'cold-stomach': {
+    title: "Pediatric Cold & Stomach Bug Care | WonderKidz Pediatrics",
+    headline: "Care for Coughs, Colds & Stomach Bugs",
+    subheadline: "Our pediatricians provide expert diagnosis and relief for coughs, colds, and stomach viruses.",
+    altText: "Compassionate pediatrician comforting a child with a cold or stomach bug.",
+    ctaText: "Schedule a Sick Visit",
+    servicesHeadline: "Cold & Stomach Virus Care",
+    servicesSubheadline: "Helping your child feel better faster.",
+    services: [
+      { title: "Sore Throat & Cough Relief", description: "We diagnose the cause of their cough and provide care plans to soothe their throat and chest.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Stomach Bug Guidance", description: "Care advice for vomiting and diarrhea, including how to prevent dehydration.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "When to See a Doctor", description: "Our team can help you decide if your child's symptoms warrant an in-office visit.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Return to School Notes", description: "Once your child is no longer contagious and feeling better, we can provide any necessary notes.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" }
+    ],
+    faqHeadline: "Cold & Stomach Bug Questions",
+    faqs: [
+      { question: "How can I tell if it's a cold or the flu?", answer: "Flu symptoms are usually more severe and come on more suddenly than a common cold. The flu often includes high fever, body aches, and fatigue, while colds are typically milder with sneezing and a stuffy nose." },
+      { question: "My child is vomiting. When should I be concerned about dehydration?", answer: "Signs of dehydration include decreased urination (fewer than 4 wet diapers in 24 hours), dry mouth, lack of tears when crying, and unusual sleepiness. Call us if you notice these signs." },
+      { question: "What is the BRAT diet?", answer: "The BRAT diet (Bananas, Rice, Applesauce, Toast) consists of bland foods that are easy to digest. It can be helpful for children recovering from a stomach bug, but it's important to reintroduce a normal diet as soon as they can tolerate it." }
+    ]
+  },
+  'pediatrician-near-me': {
+    title: "Top-Rated Pediatrician Near You | WonderKidz Pediatrics | Hollywood, FL",
+    headline: "Your Trusted Local Pediatrician in Hollywood",
+    subheadline: "Looking for the best care near you? Our 5-star rated pediatric office is accepting new patients.",
+    altText: "A friendly pediatrician near you at WonderKidz Pediatrics in Hollywood.",
+    ctaText: "Schedule a Visit Today",
+    servicesHeadline: "Complete Care, Close to Home",
+    servicesSubheadline: "We offer a full range of services for your child's health.",
+    services: [
+      { title: "Well-Child Visits", description: "Conveniently located for your child's annual checkups, from newborn to teen.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Same-Day Sick Visits", description: "When your child is sick, you don't want to travel far. We're right here in your neighborhood.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "School & Sports Physicals", description: "Get all your required forms signed quickly and conveniently at our local office.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Accepting New Patients", description: "Looking for a local doctor? We're welcoming new families from the Hollywood area.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
+    ],
+    faqHeadline: "Questions for a Local Pediatrician",
+    faqs: [
+      { question: "Where are you located?", answer: "Our office is conveniently located at 3829 Hollywood Blvd, Hollywood, FL 33021, easily accessible for families in the area." },
+      { question: "Are you accepting new patients?", answer: "Yes, we are currently welcoming new children, from newborns to teenagers, to our practice. We'd be honored to be your family's pediatrician." },
+      { question: "What are your office hours?", answer: "We offer flexible hours to accommodate busy families, including evening appointments on Mondays and Thursdays. Our full schedule is listed in the 'Contact Us' section." }
+    ]
+  },
+  'pediatrician-hollywood-fl': {
+    title: "Pediatrician in Hollywood, FL | WonderKidz Pediatrics",
+    headline: "Top-Rated Pediatric Care in Hollywood, FL",
+    subheadline: "Our board-certified pediatricians proudly serve the Hollywood community. Accepting new patients.",
+    altText: "A smiling child with their pediatrician at WonderKidz Pediatrics in Hollywood, FL.",
+    ctaText: "Book a Hollywood, FL Visit",
+    servicesHeadline: "Serving the Hollywood Community",
+    servicesSubheadline: "Your local choice for exceptional pediatric care.",
+    services: [
+      { title: "Newborn to Teen Care", description: "We provide consistent, compassionate care for your child as they grow up in Hollywood.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "5-Star Parent Reviews", description: "See why your Hollywood neighbors have rated us as a top pediatric practice in the area.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Convenient Location", description: "Located on Hollywood Blvd, we are easy to reach from anywhere in the Hollywood, FL area.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Same-Day Appointments", description: "We reserve spots every day for sick children in Hollywood, ensuring you can get care when it's needed.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" }
+    ],
+    faqHeadline: "Hollywood, FL Pediatrics Questions",
+    faqs: [
+      { question: "Which hospitals are you affiliated with in the Hollywood area?", answer: "We have affiliations with major local hospitals. Please call our office for the most up-to-date information regarding hospital affiliations." },
+      { question: "Do you accept insurance common in Hollywood, FL?", answer: "Yes, we accept most major insurance plans that are common in our area. We recommend calling our office with your insurance information to verify coverage before your first visit." },
+      { question: "Why choose a local Hollywood pediatrician?", answer: "Choosing a local pediatrician means more convenient appointments, faster care when your child is sick, and a doctor who is part of your community." }
+    ]
+  },
+  'top-rated-best': {
+    title: "Best Pediatrician in Hollywood | WonderKidz Pediatrics",
+    headline: "Experience 5-Star Pediatric Care",
+    subheadline: "See why over 50 parents have rated us one of the best pediatric practices in Hollywood.",
+    altText: "A happy child and parent with one of the best-rated pediatricians in Hollywood.",
+    ctaText: "Experience the Difference",
+    servicesHeadline: "Why Parents Rate Us the Best",
+    servicesSubheadline: "Our commitment to exceptional care for every child.",
+    services: [
+      { title: "A Doctor Who Listens", description: "We take the time to listen to your concerns and provide thoughtful, unhurried answers.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Compassionate & Gentle Care", description: "Our team is known for being patient and gentle, making every visit a positive experience.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Direct Doctor Access", description: "Parents appreciate the peace of mind that comes with being able to reach our team after hours.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "Clean & Welcoming Office", description: "We maintain a modern, clean, and child-friendly office to make your family feel comfortable.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" }
+    ],
+    faqHeadline: "Questions About Our 5-Star Care",
+    faqs: [
+      { question: "What makes a pediatrician 'the best'?", answer: "We believe the 'best' pediatrician is one who is knowledgeable, compassionate, and takes the time to build a trusting relationship with your family. We strive to be that for every patient." },
+      { question: "How do you handle nervous or anxious children?", answer: "Our entire team is trained to be patient and gentle. We use age-appropriate language, distraction techniques, and a calm demeanor to make anxious children feel safe and comfortable." },
+      { question: "Where can I read your reviews?", answer: "You can read over 50 reviews from our happy families on our Google Business Profile. We are proud of the feedback we've received from our community." }
+    ]
+  },
+  'clinics-offices': {
+    title: "Pediatric Clinic & Office | WonderKidz Pediatrics | Hollywood, FL",
+    headline: "A Modern, Welcoming Pediatric Office",
+    subheadline: "Our state-of-the-art pediatric clinic is designed to make children and parents feel comfortable.",
+    altText: "The modern and friendly pediatric office of WonderKidz Pediatrics.",
+    ctaText: "Schedule a Tour or Visit",
+    servicesHeadline: "Our Clinic's Features",
+    servicesSubheadline: "A comfortable and efficient environment for your family's care.",
+    services: [
+      { title: "Child-Friendly Environment", description: "Our waiting room and exam rooms are designed to be welcoming and non-intimidating for kids.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "State-of-the-Art Equipment", description: "We use modern medical equipment for accurate diagnoses and effective treatments.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "Convenient Location & Parking", description: "Our office is easy to find, with ample parking to make your visit stress-free.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Short Wait Times", description: "We respect your time and schedule appointments to minimize your wait in our office.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" }
+    ],
+    faqHeadline: "Questions About Our Office",
+    faqs: [
+      { question: "Can I see the office before becoming a patient?", answer: "Of course! We offer free 'meet and greet' visits where you can take a tour of our clinic, meet our team, and get your questions answered." },
+      { question: "Do you have separate waiting areas for sick and well children?", answer: "We take every precaution to prevent the spread of illness. We schedule well-child visits and sick-child visits at different times when possible and have procedures to minimize contact." },
+      { question: "Is your clinic accessible?", answer: "Yes, our building and office are fully accessible to accommodate strollers, wheelchairs, and any mobility needs." }
+    ]
+  },
+  'accepting-new-patients': {
+    title: "Pediatrician Accepting New Patients | WonderKidz Pediatrics",
+    headline: "Now Accepting New Patients in Hollywood",
+    subheadline: "Join our pediatric family! We're excited to welcome you to our 5-star rated practice.",
+    altText: "A pediatrician warmly welcoming a new family to WonderKidz Pediatrics.",
+    ctaText: "Schedule a New Patient Visit",
+    servicesHeadline: "Getting Started Is Easy",
+    servicesSubheadline: "We make joining our practice simple and stress-free.",
+    services: [
+      { title: "Free Meet & Greet", description: "Schedule a complimentary visit to meet Dr. V and ensure our practice is the right fit for your family.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Easy Record Transfers", description: "Our team will handle the process of requesting your child's medical records from your previous doctor.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Insurance Verification", description: "We'll help you verify your insurance coverage and understand your benefits before your first visit.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "First Visit Scheduling", description: "We offer convenient appointment times for your child's first well-child visit or sick visit with us.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
+    ],
+    faqHeadline: "New Patient Questions",
+    faqs: [
+      { question: "What should I bring to my child's first appointment?", answer: "Please bring your child's insurance card, all immunization records, and any relevant medical history from previous providers. Arriving 15 minutes early can help with paperwork." },
+      { question: "How do I transfer my child's medical records?", answer: "Simply sign a medical records release form at our office, and our staff will take care of faxing the request and ensuring we receive the records from your previous pediatrician." },
+      { question: "What insurance plans do you accept?", answer: "We accept most major insurance plans. Please call our office to verify your specific plan before your first visit." }
+    ]
+  },
+  'switching-providers': {
+    title: "Switching Pediatricians Made Easy | WonderKidz Pediatrics",
+    headline: "Looking For a New Pediatrician?",
+    subheadline: "We make transferring your child's medical records and care to our practice simple and seamless.",
+    altText: "A caring doctor consulting with a new family who is switching pediatricians.",
+    ctaText: "Make the Switch Today",
+    servicesHeadline: "A Seamless Transition",
+    servicesSubheadline: "We make switching to our practice effortless for your family.",
+    services: [
+      { title: "We Handle Record Transfers", description: "Provide us with your previous doctor's info, and we will manage the entire record transfer process.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Meet & Greet Consults", description: "Feel confident in your choice. Schedule a free visit to meet our team before you decide to switch.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Continuity of Care", description: "We review your child's full medical history to ensure a smooth transition and continuity of care.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "A Fresh Perspective", description: "Sometimes a new doctor can provide a fresh perspective on your child's health and wellness.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
+    ],
+    faqHeadline: "Questions About Switching",
+    faqs: [
+      { question: "Why do families switch pediatricians?", answer: "Families switch for many reasons, including moving, a change in insurance, or simply seeking a doctor whose communication style is a better fit for their family. We welcome families in all situations." },
+      { question: "Is it difficult to transfer medical records?", answer: "Not at all for you! You simply sign a release form, and our office staff handles the entire process of contacting your previous provider and having the records sent to us." },
+      { question: "How long does it take to switch?", answer: "The process can be very fast. Once we have your records, we can schedule your first appointment. The record transfer itself usually only takes a few business days." }
+    ]
+  },
+  'newborn-doctor': {
+    title: "Newborn Doctor in Hollywood, FL | WonderKidz Pediatrics",
+    headline: "Expert & Gentle Care for Your Newborn",
+    subheadline: "Congratulations! Our pediatricians specialize in newborn care for a healthy, happy start.",
+    altText: "Compassionate pediatrician providing expert newborn care in Hollywood.",
+    ctaText: "Schedule Newborn's First Visit",
+    servicesHeadline: "Comprehensive Newborn Care",
+    servicesSubheadline: "Supporting you and your baby from day one.",
+    services: [
+      { title: "First Well-Baby Visits", description: "We monitor your baby's growth, feeding, and development in those critical first weeks.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "Lactation & Feeding Support", description: "Our team provides guidance and resources for breastfeeding and formula feeding.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "New Parent Guidance", description: "We're here to answer all your questions about sleep, safety, and caring for your new baby.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Gentle Vaccinations", description: "We provide your baby's first immunizations in a calm and comforting environment.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" }
+    ],
+    faqHeadline: "Newborn Care Questions",
+    faqs: [
+      { question: "When should my newborn have their first doctor visit?", answer: "Your newborn should typically have their first visit 3-5 days after birth. We will check their weight, feeding, and overall health." },
+      { question: "Do you offer prenatal 'meet and greet' appointments?", answer: "Absolutely! We encourage expecting parents to schedule a free prenatal visit to meet Dr. V, see our office, and ensure we're the right fit for your growing family." },
+      { question: "What should I bring to my newborn's first appointment?", answer: "Please bring any discharge paperwork from the hospital, your baby's insurance information, and a list of any questions or concerns you may have." }
+    ]
+  },
+  'newborn-appointments': {
+    title: "Newborn's First Doctor Visit | WonderKidz Pediatrics",
+    headline: "Schedule Your Newborn's First Checkup",
+    subheadline: "We make booking your baby's first wellness exams easy. Ensure they are meeting every milestone.",
+    altText: "A pediatrician performing a gentle first checkup on a newborn baby.",
+    ctaText: "Book Baby's First Appointment",
+    servicesHeadline: "Your Baby's First Visits",
+    servicesSubheadline: "Setting the foundation for a lifetime of health.",
+    services: [
+      { title: "Easy Scheduling", description: "Our staff will help you schedule your newborn's first appointment and subsequent checkups.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "What to Expect", description: "We'll check weight, length, feeding patterns, and answer all of your new-parent questions.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Developmental Milestones", description: "Our team will track your baby's progress and ensure they are meeting their early milestones.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "A Welcoming Environment", description: "We provide a calm, clean, and welcoming space for you and your newest family member.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
+    ],
+    faqHeadline: "Newborn Appointment Questions",
+    faqs: [
+      { question: "How often does my newborn need to see the doctor?", answer: "After the initial visit a few days after birth, typical newborn checkups occur at 2 weeks, 2 months, 4 months, and 6 months of age. We will provide you with a full schedule." },
+      { question: "What if I'm concerned between scheduled appointments?", answer: "Never hesitate to call! We are here to support you. Our team can answer your questions over the phone or schedule a visit if needed." },
+      { question: "Will my baby get shots at the first appointment?", answer: "The first set of vaccinations is typically administered at the 2-month well-child visit, not the very first newborn checkup. We will discuss the vaccination schedule with you in detail." }
+    ]
+  },
+  'expecting-parents': {
+    title: "Meet Our Pediatricians | WonderKidz Pediatrics | Hollywood, FL",
+    headline: "Expecting? Schedule a Free Prenatal Visit",
+    subheadline: "Choose the right doctor for your baby. Meet our team and get your questions answered before birth.",
+    altText: "An expecting parent meeting with a friendly pediatrician at WonderKidz Pediatrics.",
+    ctaText: "Book Your Free Consult",
+    servicesHeadline: "Preparing for Your Baby",
+    servicesSubheadline: "We're here to support you before your baby arrives.",
+    services: [
+      { title: "Meet Dr. V", description: "Our free consults are a great way to meet Dr. V and see if her approach is a good fit for your family.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Tour Our Office", description: "See our welcoming, child-friendly clinic and get a feel for our practice.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Ask Your Questions", description: "Get answers to all your questions about newborn care, vaccinations, and what to expect.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "No-Obligation", description: "This is a complimentary service to help you make an informed decision. There's no pressure to join.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" }
+    ],
+    faqHeadline: "Prenatal Visit Questions",
+    faqs: [
+      { question: "When should I schedule a prenatal visit with a pediatrician?", answer: "A great time to schedule a meet-and-greet is during your third trimester. This gives you plenty of time to choose a doctor before your baby arrives." },
+      { question: "What questions should I ask a potential pediatrician?", answer: "Great questions to ask include their philosophy on care, office hours, after-hours availability, and hospital affiliations. We've prepared a helpful list of questions for you." },
+      { question: "Do I need to bring anything to the prenatal visit?", answer: "No, you don't need to bring anything but your questions! This is an informal meeting to help you get to know our practice." }
+    ]
+  },
+  'infant-care': {
+    title: "Infant Care & Checkups | WonderKidz Pediatrics",
+    headline: "Specialized Medical Care for Your Infant",
+    subheadline: "From wellness visits to developmental milestones, we are your partners in your infant's health.",
+    altText: "A doctor smiling at an infant during a routine wellness checkup.",
+    ctaText: "Schedule an Infant Checkup",
+    servicesHeadline: "Your Infant's Health Journey",
+    servicesSubheadline: "Partnering with you through the first year and beyond.",
+    services: [
+      { title: "Regular Well-Child Visits", description: "We follow the AAP schedule for infant checkups at 2, 4, 6, 9, and 12 months to monitor health.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Developmental Screenings", description: "Tracking key milestones like rolling over, sitting up, and babbling to ensure they are on track.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Immunizations", description: "We provide all recommended infant vaccinations in a safe, gentle, and supportive environment.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "Guidance for Parents", description: "We provide advice on introducing solid foods, sleep training, and baby-proofing your home.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" }
+    ],
+    faqHeadline: "Infant Care Questions",
+    faqs: [
+      { question: "What happens during an infant well-child visit?", answer: "We perform a full physical exam, track growth on a growth chart, administer scheduled vaccines, and discuss your baby's development, sleep, and feeding habits." },
+      { question: "When should my baby start eating solid foods?", answer: "We generally recommend introducing solid foods around 6 months of age, depending on your baby's individual developmental readiness. We will guide you through this process." },
+      { question: "My infant has a cold. Do they need to be seen?", answer: "For a simple cold, it may not be necessary, but we always encourage you to call. We can advise you on symptoms to watch for that would warrant a visit, such as a high fever or difficulty breathing." }
+    ]
+  },
+  'toddler-care': {
+    title: "Toddler Checkups & Wellness | WonderKidz Pediatrics",
+    headline: "Expert Pediatric Care for Toddlers",
+    subheadline: "The toddler years are full of growth. We provide expert annual checkups and guidance.",
+    altText: "A happy toddler getting a high-five from their pediatrician.",
+    ctaText: "Schedule a Toddler Checkup",
+    servicesHeadline: "Navigating the Toddler Years",
+    servicesSubheadline: "Supporting your child's rapid growth and development.",
+    services: [
+      { title: "Annual Toddler Checkups", description: "We provide well-child visits at 15, 18, 24, and 30 months, and then annually, to track health.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Behavioral Guidance", description: "We offer advice and resources for common toddler behaviors like temper tantrums and picky eating.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Developmental Screenings", description: "We assess speech, motor skills, and social development to ensure your toddler is on track.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Potty Training Readiness", description: "Our team can help you identify signs of potty training readiness and provide tips for success.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
+    ],
+    faqHeadline: "Toddler Care Questions",
+    faqs: [
+      { question: "How often does my toddler need a checkup?", answer: "The American Academy of Pediatrics recommends checkups at 15, 18, 24, and 30 months, and then once a year starting at age 3. These visits are key for monitoring growth and development." },
+      { question: "My toddler is a very picky eater. What can I do?", answer: "This is very common! We recommend offering a variety of healthy foods without pressure. During your visit, we can discuss specific strategies to ensure they are getting the nutrition they need." },
+      { question: "Are temper tantrums normal for toddlers?", answer: "Yes, temper tantrums are a normal part of toddler development as they learn to manage big emotions. We can provide guidance on how to navigate them constructively." }
+    ]
+  },
+  'well-child-visits': {
+    title: "Well-Child Visits in Hollywood | WonderKidz Pediatrics",
+    headline: "Schedule Your Child's Annual Wellness Exam",
+    subheadline: "Keep your child healthy and on track with a comprehensive well-child visit.",
+    altText: "A smiling school-aged child during a well-child visit with their doctor.",
+    ctaText: "Book a Wellness Exam",
+    servicesHeadline: "The Importance of Well Visits",
+    servicesSubheadline: "Preventative care is the foundation of your child's health.",
+    services: [
+      { title: "Preventative Care", description: "Well visits are key to catching potential health issues early and providing preventative care.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Growth & Development", description: "We track your child's physical and developmental milestones to ensure they're on a healthy path.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "Vaccinations", description: "We administer age-appropriate immunizations to protect your child from serious diseases.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Open Conversation", description: "This is your dedicated time to ask questions about nutrition, sleep, behavior, and school.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" }
+    ],
+    faqHeadline: "Well-Child Visit Questions",
+    faqs: [
+      { question: "How often should my child have a well-child visit?", answer: "Children should have frequent checkups during infancy, then annually from age 3 through adolescence. We will provide you with a recommended schedule." },
+      { question: "What is the difference between a well visit and a sick visit?", answer: "A well visit is a proactive, comprehensive checkup focused on prevention and development. A sick visit is reactive, focused on diagnosing and treating a specific illness or symptom." },
+      { question: "Does my insurance cover well-child visits?", answer: "Most insurance plans are required to cover preventative care services, including well-child visits and vaccinations, at 100%. We recommend confirming with your specific plan." }
+    ]
+  },
+  'school-physicals': {
+    title: "School Physicals in Hollywood, FL | WonderKidz Pediatrics",
+    headline: "Fast & Easy School Physicals",
+    subheadline: "Get your back-to-school forms signed today. We provide fast and thorough physical exams.",
+    altText: "A pediatrician completing forms for a child's school physical exam.",
+    ctaText: "Book a School Physical",
+    servicesHeadline: "Back-to-School Services",
+    servicesSubheadline: "Get ready for the school year with one easy visit.",
+    services: [
+      { title: "Thorough Physical Exams", description: "We conduct a complete physical exam to ensure your child is healthy and ready for school.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Required Form Completion", description: "We are familiar with all Florida school health forms (Form DH 3040) and will complete them.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Vaccination Updates", description: "We'll review your child's immunization record and provide any needed shots for school entry.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "Convenient Appointments", description: "Beat the back-to-school rush! Schedule your child's physical early in the summer.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" }
+    ],
+    faqHeadline: "School Physical Questions",
+    faqs: [
+      { question: "Is a school physical the same as a well-child visit?", answer: "A school physical meets the requirements for school entry, but a comprehensive well-child visit also covers developmental, behavioral, and other health topics in more detail. We can often complete school forms during a scheduled well-child visit." },
+      { question: "What forms do I need to bring?", answer: "Please bring the specific health form provided by your child's school. If you don't have one, we have the standard Florida state forms available at our office." },
+      { question: "How long is a school physical valid?", answer: "School physicals are typically valid for one calendar year. Your school district will require an updated form for specific grades or upon first entry into the district." }
+    ]
+  },
+  'sports-physicals': {
+    title: "Youth Sports Physicals | WonderKidz Pediatrics | Hollywood, FL",
+    headline: "Sports Physicals to Get Them Cleared to Play",
+    subheadline: "Ensure your young athlete is safe for the season with our comprehensive sports physicals.",
+    altText: "A doctor performing a sports physical for a young athlete.",
+    ctaText: "Book a Sports Physical",
+    servicesHeadline: "Our Sports Physical Services",
+    servicesSubheadline: "Ensuring your athlete is healthy and ready for their sport.",
+    services: [
+      { title: "Comprehensive Exams", description: "We assess vitals, joints, and flexibility to ensure your child is safe to play.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Form Completion", description: "We are familiar with all local school and league forms and will complete them during your visit.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Injury Prevention Tips", description: "We provide personalized advice to help your young athlete avoid common sports injuries.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Same-Day Appointments", description: "Don't wait until the last minute before tryouts. We offer convenient, fast appointments.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
+    ],
+    faqHeadline: "Sports Physical Questions",
+    faqs: [
+      { question: "What does a sports physical include?", answer: "A sports physical includes a review of the athlete's medical history and a physical exam to determine if it's safe for them to participate in a particular sport." },
+      { question: "Is a sports physical the same as an annual physical?", answer: "No. A sports physical focuses on health history relevant to sports. An annual well-child exam is more comprehensive, covering all aspects of your child's health and development." },
+      { question: "How long is a sports physical valid for?", answer: "Typically, sports physicals are valid for one year. Most school districts and sports leagues require a new physical before the start of each new season." }
+    ]
+  },
+  'developmental-screenings': {
+    title: "Developmental Screenings for Children | WonderKidz Pediatrics",
+    headline: "Is Your Child Meeting Their Milestones?",
+    subheadline: "We offer compassionate developmental screenings for toddlers and children to ensure they are on track.",
+    altText: "A pediatrician engaging with a child during a developmental screening.",
+    ctaText: "Schedule a Screening",
+    servicesHeadline: "Developmental Support",
+    servicesSubheadline: "Partnering with you to support your child's growth.",
+    services: [
+      { title: "Age-Appropriate Screenings", description: "We use validated screening tools during well-child visits to monitor development.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Early Identification", description: "Screenings help identify any potential delays early, which is key for successful intervention.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Expert Guidance & Referrals", description: "If concerns are identified, we provide guidance and connect you with trusted local specialists.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "A Supportive Environment", description: "We discuss developmental milestones in a supportive, judgment-free space.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
+    ],
+    faqHeadline: "Developmental Screening Questions",
+    faqs: [
+      { question: "What do developmental screenings check for?", answer: "Screenings look at how your child plays, learns, speaks, acts, and moves. They help track progress in areas like speech and language, social skills, and motor skills." },
+      { question: "When are developmental screenings performed?", answer: "The American Academy of Pediatrics recommends developmental screenings for all children during their regular well-child visits at 9, 18, and 30 months." },
+      { question: "What happens if the screening shows a potential concern?", answer: "If a screening identifies a potential concern, it does not mean your child has a problem. It simply means we should explore it further. We will discuss next steps, which may include a more in-depth assessment or a referral to a specialist." }
+    ]
+  },
+  'adhd-behavioral': {
+    title: "Pediatric ADHD Evaluation | WonderKidz Pediatrics",
+    headline: "ADHD & Behavioral Health Support",
+    subheadline: "Concerned about your child's behavior or attention? We provide expert evaluations and guidance.",
+    altText: "A caring doctor having a supportive conversation with a child and parent about behavioral health.",
+    ctaText: "Schedule an Evaluation",
+    servicesHeadline: "Behavioral Health Services",
+    servicesSubheadline: "A compassionate first step to getting answers.",
+    services: [
+      { title: "Comprehensive Evaluations", description: "We use standardized rating scales and clinical interviews for a thorough ADHD assessment.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Personalized Treatment Plans", description: "If a diagnosis is made, we work with you to create a holistic treatment plan.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Medication Management", description: "When medication is part of the plan, we provide careful and attentive management and monitoring.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "Collaboration with Schools", description: "We can partner with your child's school to help create a supportive learning environment.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" }
+    ],
+    faqHeadline: "ADHD & Behavior Questions",
+    faqs: [
+      { question: "What are the signs of ADHD in children?", answer: "Common signs can include difficulty paying attention (inattention), being overactive (hyperactivity), and acting without thinking (impulsivity). These behaviors are often more frequent and severe than in other children of the same age." },
+      { question: "How is ADHD diagnosed?", answer: "There is no single test for ADHD. Diagnosis involves a comprehensive evaluation, including gathering information from parents, teachers, and the child, using standardized rating scales, and a clinical assessment to rule out other causes." },
+      { question: "What does ADHD treatment involve?", answer: "The most effective treatment plans often include a combination of behavioral therapy, parent training, and school support. In many cases, medication is also a safe and effective part of the treatment." }
+    ]
+  },
+  'autism-speech': {
+    title: "Autism & Speech Screening | WonderKidz Pediatrics",
+    headline: "Autism & Speech Delay Assessments",
+    subheadline: "We offer a supportive first step with early identification screenings and expert referrals.",
+    altText: "A pediatrician gently interacting with a toddler during an autism and speech screening.",
+    ctaText: "Discuss Your Concerns",
+    servicesHeadline: "Screening & Support Services",
+    servicesSubheadline: "A compassionate first step to getting answers.",
+    services: [
+      { title: "Autism Screening (M-CHAT)", description: "We use the M-CHAT screening tool at 18- and 24-month checkups to look for early signs of autism.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Speech Delay Assessment", description: "If you're concerned about your child's language development, we can assess their milestones.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Early Intervention is Key", description: "Identifying concerns early leads to better outcomes. We take all parental concerns seriously.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Referrals to Specialists", description: "We connect you with a trusted network of specialists for formal diagnosis and therapy.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
+    ],
+    faqHeadline: "Autism & Speech Questions",
+    faqs: [
+      { question: "What are the early signs of autism spectrum disorder (ASD)?", answer: "Some early signs can include not making eye contact, not responding to their name, not pointing at objects to show interest, and delayed speech milestones. Every child is different, so a screening is important." },
+      { question: "My toddler isn't talking much. Should I be worried?", answer: "While children develop at their own pace, there are general milestones for speech. If you have any concerns, it's always best to schedule an assessment. Early intervention for speech delay can make a big difference." },
+      { question: "What happens after the screening?", answer: "A screening is not a diagnosis. If the screening indicates a risk, we will discuss the results with you and provide a referral to specialists, like a developmental pediatrician or speech therapist, for a formal evaluation." }
+    ]
+  },
+  'newborn-vaccinations': {
+    title: "Newborn Vaccinations | WonderKidz Pediatrics",
+    headline: "Your Baby's First Shots & Immunizations",
+    subheadline: "We provide safe, gentle vaccinations for newborns according to the CDC schedule.",
+    altText: "A doctor preparing for a safe and gentle vaccination for a newborn baby.",
+    ctaText: "Schedule Baby's First Shots",
+    servicesHeadline: "Protecting Your Newborn",
+    servicesSubheadline: "Safe and effective immunizations for a healthy start.",
+    services: [
+      { title: "CDC-Recommended Schedule", description: "We follow the vaccination schedule recommended by the CDC and American Academy of Pediatrics.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Safe & Gentle Administration", description: "Our team is experienced in giving shots to infants, making the process as quick and comfortable as possible.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Answering Your Questions", description: "We take the time to answer all your questions about vaccine safety and effectiveness.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Comforting Environment", description: "We provide a calm and reassuring environment for both you and your baby during vaccination visits.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
+    ],
+    faqHeadline: "Newborn Vaccination Questions",
+    faqs: [
+      { question: "When does my baby get their first shots?", answer: "The first vaccine (Hepatitis B) is typically given in the hospital after birth. The next series of routine vaccinations starts at the 2-month well-child visit." },
+      { question: "Are vaccines safe for my newborn?", answer: "Yes. Vaccines are one of the safest and most effective ways to protect your baby from serious diseases. They undergo extensive testing and are continuously monitored for safety." },
+      { question: "What are common side effects of vaccines?", answer: "Common side effects are mild and temporary, such as a low-grade fever, fussiness, or soreness at the injection site. We will discuss how to manage these with you during your visit." }
+    ]
+  },
+  'school-vaccinations': {
+    title: "School Vaccinations | WonderKidz Pediatrics | Hollywood, FL",
+    headline: "Get Your Child's School Vaccinations",
+    subheadline: "From kindergarten to college, we ensure your child is up-to-date on all required immunizations.",
+    altText: "A brave child getting a required school vaccination from a friendly pediatrician.",
+    ctaText: "Book School Immunizations",
+    servicesHeadline: "School & Childhood Immunizations",
+    servicesSubheadline: "Keeping your child and our community healthy.",
+    services: [
+      { title: "Kindergarten Shots", description: "We provide all required vaccinations for entry into Florida kindergartens, including MMR and DTaP.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "Adolescent Boosters", description: "We provide boosters like Tdap and the meningococcal vaccine required for middle school entry.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Updating School Forms", description: "We will update your child's Florida Certificate of Immunization (Form DH 680) after each shot.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Avoid the Rush", description: "Schedule your child's back-to-school vaccinations early to avoid the summer rush.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" }
+    ],
+    faqHeadline: "School Vaccination Questions",
+    faqs: [
+      { question: "What shots does my child need for kindergarten?", answer: "For entry into kindergarten in Florida, children typically need their final doses of DTaP, Polio, MMR, and Varicella (chickenpox) vaccines." },
+      { question: "What if I don't have my child's shot record?", answer: "We can often look up your child's vaccination history in the Florida SHOTS state registry. If you're coming from another state, it's best to bring any records you have." },
+      { question: "Do you offer the HPV vaccine?", answer: "Yes, we offer and strongly recommend the HPV vaccine for both boys and girls, typically starting at age 11 or 12, to protect against HPV-related cancers later in life." }
+    ]
+  },
+  'flu-shots': {
+    title: "Pediatric Flu Shots | WonderKidz Pediatrics | Hollywood, FL",
+    headline: "Flu Shots for Babies, Kids & Teens",
+    subheadline: "Protect your family this flu season. We offer safe and effective flu shots for all ages.",
+    altText: "A child receiving a quick and easy flu shot from their pediatrician.",
+    ctaText: "Schedule Flu Shots Today",
+    servicesHeadline: "Annual Flu Protection",
+    servicesSubheadline: "The best way to keep your family healthy during flu season.",
+    services: [
+      { title: "For the Whole Family", description: "We provide flu shots for children 6 months and older. We encourage parents to get vaccinated too!", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Safe & Effective", description: "The annual flu vaccine is proven to be the best defense against catching the flu and its serious complications.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "Convenient Flu Clinics", description: "We offer dedicated times and easy scheduling to make getting your family's flu shots simple.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Avoid Missed School & Work", description: "Getting vaccinated helps prevent illness that can lead to missed days of school for kids and work for parents.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" }
+    ],
+    faqHeadline: "Flu Shot Questions",
+    faqs: [
+      { question: "When is the best time to get a flu shot?", answer: "It's best to get vaccinated in the early fall, ideally by the end of October, before flu season begins to peak. However, getting vaccinated later is still beneficial." },
+      { question: "Can the flu shot give you the flu?", answer: "No, the flu shot cannot cause the flu. The vaccines are made with either inactivated (killed) virus or no virus at all. You may feel mild body aches or a low fever as your immune system responds, but this is not the flu." },
+      { question: "Does my child need two doses of the flu shot?", answer: "Children between 6 months and 8 years old who are getting vaccinated for the first time, or who have only previously had one dose, may need two doses spaced four weeks apart. We will advise you based on your child's history." }
+    ]
+  },
+  'teen-checkups': {
+    title: "Pediatrician for Teenagers | WonderKidz Pediatrics",
+    headline: "Annual Checkups & Healthcare for Teens",
+    subheadline: "Our doctors provide a confidential and respectful environment for adolescent wellness.",
+    altText: "A pediatrician having a confidential health discussion with a teen patient.",
+    ctaText: "Book a Teen Checkup",
+    servicesHeadline: "Adolescent Healthcare",
+    servicesSubheadline: "Supporting your teen's health and independence.",
+    services: [
+      { title: "Confidential Visits", description: "We provide a safe space for teens to discuss sensitive health topics privately with their doctor.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Annual Physicals", description: "A yearly checkup is crucial for monitoring physical growth, development, and overall health.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Mental & Emotional Health", description: "We screen for and discuss mental health topics like anxiety, depression, and stress.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Sports & School Physicals", description: "We complete all necessary forms for sports, school, and camp during their annual visit.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
+    ],
+    faqHeadline: "Teen Healthcare Questions",
+    faqs: [
+      { question: "Does my teen still need to see a pediatrician?", answer: "Yes! Pediatricians are trained in adolescent medicine and are best equipped to handle the unique physical, emotional, and social changes that occur during the teenage years, up to age 18 or even 21." },
+      { question: "Will I be in the room for my teen's entire appointment?", answer: "We encourage teens to spend some one-on-one time with the doctor to discuss health questions privately. This helps them build independence and take ownership of their health. We will always speak with you as well." },
+      { question: "What topics are covered in a teen checkup?", answer: "We cover everything from physical health, nutrition, and exercise to mental health, school performance, and high-risk behaviors in a confidential and non-judgmental way." }
+    ]
+  },
+  'teen-sports-physicals': {
+    title: "Sports Physicals for School | WonderKidz Pediatrics",
+    headline: "School Sports Physicals Near You",
+    subheadline: "Get your child athlete cleared for the season with a fast and thorough sports physical.",
+    altText: "A doctor conducting a sports physical for an athlete.",
+    ctaText: "Book a Teen Sports Physical",
+    servicesHeadline: "Physicals for Teen Athletes",
+    servicesSubheadline: "Ensuring your teen is safe and ready for their sport.",
+    services: [
+      { title: "High School Sport Specifics", description: "Our exams address the unique physical demands of high school sports.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Fast Form Completion", description: "We are familiar with the FHSAA (Florida High School Athletic Association) form and will complete it.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Concussion & Injury Risk", description: "We discuss concussion history and provide guidance on injury prevention for teen athletes.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Beat the Tryout Rush", description: "Schedule your teen's sports physical well before tryouts to avoid any last-minute stress.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" }
+    ],
+    faqHeadline: "Teen Sports Physical Questions",
+    faqs: [
+      { question: "What form is needed for high school sports in Florida?", answer: "Florida requires the FHSAA Preparticipation Physical Evaluation (EL2) form. It's important to have the parent and student sections completed before your appointment." },
+      { question: "What if my teen has a pre-existing condition like asthma?", answer: "It's very important to disclose all medical conditions. We can then assess if any accommodations or specific action plans are needed to ensure they can play their sport safely." },
+      { question: "Can the sports physical be done during their annual checkup?", answer: "Yes, absolutely. We can complete the sports physical forms during your teen's regularly scheduled well-child visit. This is often the most convenient option." }
+    ]
+  },
+  'teen-mental-health': {
+    title: "Teen Mental Health Support | WonderKidz Pediatrics",
+    headline: "A Safe Space for Your Teen's Mental Health",
+    subheadline: "Our compassionate pediatricians offer confidential support and guidance for teens.",
+    altText: "A supportive doctor talking with a teen about mental health in a private setting.",
+    ctaText: "Book a Private Consult",
+    servicesHeadline: "Support for Teen Mental Wellness",
+    servicesSubheadline: "You are not alone. We are here to help.",
+    services: [
+      { title: "Confidential Conversations", description: "We provide a safe, non-judgmental space for teens to talk about what's on their mind.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" },
+      { title: "Anxiety & Depression Screening", description: "We use standardized screening tools to help identify signs of anxiety and depression.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "A First Step to Help", description: "As your primary care provider, we can be a crucial first step in getting the right help and support.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "Referrals to Therapists", description: "We connect families with trusted local mental health professionals for ongoing therapy.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" }
+    ],
+    faqHeadline: "Teen Mental Health Questions",
+    faqs: [
+      { question: "How can I tell if my teen is struggling with more than normal moodiness?", answer: "Warning signs can include persistent sadness, loss of interest in activities they once enjoyed, changes in sleep or eating habits, and social withdrawal. If you're concerned, it's always right to seek professional advice." },
+      { question: "How do I bring up the topic of mental health with my teen?", answer: "Choose a calm time to talk. Express your concern in a loving, non-judgmental way. You can say something like, 'I've noticed you seem down lately, and I'm here for you. Would you be open to talking to someone?'" },
+      { question: "Is my conversation with the doctor confidential?", answer: "For teens, conversations with their doctor about sensitive topics are confidential, with exceptions for situations where they may harm themselves or others. This confidentiality is crucial for building trust." }
+    ]
+  },
+  'teen-sports-injuries': {
+    title: "Teen Sports Injury Doctor | WonderKidz Pediatrics",
+    headline: "Expert Care for Teen Sports Injuries",
+    subheadline: "From sprains to fractures, our team helps young athletes recover safely and get back in the game.",
+    altText: "A pediatrician examining a teen athlete's sports injury.",
+    ctaText: "Book an Injury Consult",
+    servicesHeadline: "Getting Teens Back in the Game",
+    servicesSubheadline: "Expert diagnosis and treatment for young athletes.",
+    services: [
+      { title: "Fast Injury Diagnosis", description: "We provide prompt evaluation of sprains, strains, and potential fractures to create a treatment plan.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Concussion Assessment", description: "If a head injury occurs, we provide evaluation and guidance on safe return-to-play protocols.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Recovery & Rehab Plans", description: "We guide you on proper at-home care and can refer to physical therapists when needed.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "Focus on Safe Recovery", description: "Our goal is to ensure athletes don't return to play too soon, reducing the risk of re-injury.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" }
+    ],
+    faqHeadline: "Teen Sports Injury Questions",
+    faqs: [
+      { question: "Should I use ice or heat on an injury?", answer: "For acute injuries like a sprain, use ice for the first 48-72 hours to reduce swelling and pain (20 minutes on, 20 minutes off). Heat is generally better for chronic muscle soreness." },
+      { question: "What is the 'return to play' protocol for a concussion?", answer: "Return to play after a concussion is a gradual, step-by-step process that can only begin after the athlete is completely symptom-free. We will provide specific guidelines that must be followed for safety." },
+      { question: "My teen wants to play through the pain. What should I do?", answer: "'Playing through the pain' can turn a minor injury into a major one. It's crucial to have any persistent pain evaluated by a doctor to ensure a proper diagnosis and prevent long-term damage." }
+    ]
+  },
+  'teen-vaccinations': {
+    title: "Teen & College Vaccinations | WonderKidz Pediatrics",
+    headline: "Required Vaccinations for College",
+    subheadline: "Ensure your teen is protected and ready for college with all required immunizations.",
+    altText: "A teenager getting a required vaccination before heading to college.",
+    ctaText: "Book College Vaccinations",
+    servicesHeadline: "Vaccines for Teens & Young Adults",
+    servicesSubheadline: "Protecting their health as they prepare for the future.",
+    services: [
+      { title: "College Entry Requirements", description: "We provide all common vaccinations required by colleges, like the meningococcal vaccine.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Complete College Forms", description: "Bring us your college's health forms, and we will complete the immunization section for you.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "HPV Vaccine Series", description: "It's not too late. We can help your teen start or complete the HPV vaccine series to prevent future cancers.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "Travel Vaccinations", description: "If your teen is planning a study abroad trip, we can advise on and provide necessary travel vaccines.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" }
+    ],
+    faqHeadline: "Teen & College Vaccine Questions",
+    faqs: [
+      { question: "Why is the meningococcal vaccine so important for college students?", answer: "Bacterial meningitis is a serious illness that can spread quickly in group living situations like dorms. The MenACWY and MenB vaccines provide protection against the most common strains." },
+      { question: "My teen is afraid of shots. How do you handle that?", answer: "We understand. Our team is experienced in working with anxious teens. We explain the process, work quickly, and treat them with respect to make the experience as positive as possible." },
+      { question: "What if we can't find my teen's old shot records?", answer: "We can often look up their records in the state immunization registry. In some cases, a blood test (titer) can be done to check for immunity, or we may recommend re-vaccinating if there is no proof of immunity." }
+    ]
+  },
+  'aetna': {
+    title: "Aetna Pediatrician in Hollywood | WonderKidz Pediatrics",
+    headline: "We Accept Aetna Insurance",
+    subheadline: "Use your Aetna plan at our 5-star rated pediatric practice. We are in-network and accepting new patients.",
+    altText: "A happy child with a doctor at an Aetna in-network pediatric office in Hollywood.",
+    ctaText: "Book With Your Aetna Plan",
+    servicesHeadline: "Using Your Aetna Benefits",
+    servicesSubheadline: "Get the most out of your Aetna insurance plan with us.",
+    services: [
+      { title: "In-Network Aetna Provider", description: "As an in-network provider, you receive the highest level of benefits from your Aetna plan.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Easy Insurance Billing", description: "Our staff handles all the paperwork and direct billing to Aetna for your convenience.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Well-Child Visit Coverage", description: "Most Aetna plans fully cover preventative care, including annual well-child visits.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "New Patients Welcome", description: "We are currently accepting new patients with Aetna insurance plans.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" }
+    ],
+    faqHeadline: "Aetna Insurance Questions",
+    faqs: [
+      { question: "Which Aetna plans do you accept?", answer: "We accept most Aetna PPO and HMO plans. Because plans can vary, we always recommend calling our office with your member ID number so we can verify your specific coverage." },
+      { question: "How do I know what my Aetna plan covers?", answer: "Our billing staff can help you with general questions, but the best way to understand your specific copayments, deductible, and coverage is to contact Aetna directly or check your member portal." },
+      { question: "Do I need a referral to see you with my Aetna plan?", answer: "For most PPO plans, a referral is not necessary. If you have an HMO plan, you may need to select us as your child's Primary Care Physician (PCP) before your visit. Please check with Aetna to confirm." }
+    ]
+  },
+  'cigna': {
+    title: "Cigna Pediatrician in Hollywood | WonderKidz Pediatrics",
+    headline: "We Accept Cigna Insurance",
+    subheadline: "Use your Cigna plan at our 5-star rated pediatric practice. We are in-network and accepting new patients.",
+    altText: "A happy child with a doctor at a Cigna in-network pediatric office in Hollywood.",
+    ctaText: "Book With Your Cigna Plan",
+    servicesHeadline: "Using Your Cigna Benefits",
+    servicesSubheadline: "Get the most out of your Cigna insurance plan with us.",
+    services: [
+      { title: "In-Network Cigna Provider", description: "As an in-network provider, you receive the highest level of benefits from your Cigna plan.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Easy Insurance Billing", description: "Our staff handles all the paperwork and direct billing to Cigna for your convenience.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Well-Child Visit Coverage", description: "Most Cigna plans fully cover preventative care, including annual well-child visits.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "New Patients Welcome", description: "We are currently accepting new patients with Cigna insurance plans.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" }
+    ],
+    faqHeadline: "Cigna Insurance Questions",
+    faqs: [
+      { question: "Which Cigna plans do you accept?", answer: "We accept most Cigna PPO and HMO plans. Because plans can vary, we always recommend calling our office with your member ID number so we can verify your specific coverage." },
+      { question: "How do I know what my Cigna plan covers?", answer: "Our billing staff can help you with general questions, but the best way to understand your specific copayments, deductible, and coverage is to contact Cigna directly or check your member portal." },
+      { question: "Do I need a referral to see you with my Cigna plan?", answer: "For most PPO plans, a referral is not necessary. If you have an HMO plan, you may need to select us as your child's Primary Care Physician (PCP) before your visit. Please check with Cigna to confirm." }
+    ]
+  },
+  'united-healthcare': {
+    title: "United Healthcare Pediatrician | WonderKidz Pediatrics",
+    headline: "We Accept United Healthcare (UHC)",
+    subheadline: "Use your UHC plan at our 5-star rated pediatric practice. We are in-network and accepting new patients.",
+    altText: "A happy child with a doctor at a United Healthcare in-network pediatric office.",
+    ctaText: "Book With Your UHC Plan",
+    servicesHeadline: "Using Your UHC Benefits",
+    servicesSubheadline: "Get the most out of your United Healthcare plan with us.",
+    services: [
+      { title: "In-Network UHC Provider", description: "As an in-network provider, you receive the highest level of benefits from your UHC plan.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757628621280-1757612332640_1757609349111_handsHeart.webp" },
+      { title: "Easy Insurance Billing", description: "Our staff handles all the paperwork and direct billing to UHC for your convenience.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757614519168_1752797898633_calendar_clock_schedule_icon_icons.com_51085_84131742.webp" },
+      { title: "Well-Child Visit Coverage", description: "Most UHC plans fully cover preventative care, including annual well-child visits.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757615100569-1757612332640_1757609297992_1752797976669_baby_5_119903_84131697.webp" },
+      { title: "New Patients Welcome", description: "We are currently accepting new patients with United Healthcare insurance plans.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757613926863-1757612332640_1757351084191_phone_call.webp" }
+    ],
+    faqHeadline: "United Healthcare (UHC) Questions",
+    faqs: [
+      { question: "Which UHC plans do you accept?", answer: "We accept most UHC plans, including Choice Plus and other PPO/HMO options. Because plans can vary, we always recommend calling our office with your member ID so we can verify your specific coverage." },
+      { question: "How do I know what my UHC plan covers?", answer: "Our billing staff can help you with general questions, but the best way to understand your specific copayments, deductible, and coverage is to contact UHC directly or check your member portal." },
+      { question: "Do I need to select a PCP with my UHC plan?", answer: "If you have an HMO or managed care plan, you will likely need to select one of our doctors as your child's Primary Care Physician (PCP) before your visit. Please check with UHC to confirm your plan's requirements." }
+    ]
+  }
+};
 
   // This code runs when the page loads
   document.addEventListener("DOMContentLoaded", function() {
