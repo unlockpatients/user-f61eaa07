@@ -1297,8 +1297,6 @@ document.addEventListener("DOMContentLoaded", function() {
   // Get the ad group theme from the URL (e.g., 'fever-flu')
   const params = new URLSearchParams(window.location.search);
   const adgroup = params.get('adgroup');
-  const heroContent = document.getElementById('i7ptf-2');
-
   // Check if content for that ad group exists in our object
   if (adgroup && adgroupContent[adgroup]) {
     const content = adgroupContent[adgroup];
@@ -1352,37 +1350,28 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     // Update FAQ Section
     if (content.faqs && content.faqs.length > 0) {
-                const faqHeadline = document.getElementById('faq-headline');
-                if (faqHeadline && content.faqHeadline) faqHeadline.innerHTML = content.faqHeadline;
-                content.faqs.forEach((faq, i) => {
-                    const index = i + 1;
-                    const q = document.getElementById(`faq-q-${index}`);
-                    const a = document.getElementById(`faq-a-${index}`);
-                    if (q) q.innerHTML = faq.question;
-                    if (a) a.innerHTML = faq.answer;
-                });
-            }
-        }
-        
-        if (heroContent) {
-            heroContent.classList.add('visible');
-        }
-
-        const faqQuestions = document.querySelectorAll('.faq-question');
-        if (faqQuestions.length > 0) {
-            faqQuestions.forEach(item => {
-                item.addEventListener('click', () => {
-                    const faqItem = item.parentElement;
-                    const faqToggle = item.querySelector('.faq-toggle');
-                    faqItem.classList.toggle('active');
-                    if (faqItem.classList.contains('active')) {
-                        faqToggle.textContent = '−';
-                    } else {
-                        faqToggle.textContent = '+';
-                    }
-                });
-            });
-        }
+      const faqHeadline = document.getElementById('faq-headline');
+      if (faqHeadline && content.faqHeadline) faqHeadline.innerHTML = content.faqHeadline;
+      const faqContainer = document.querySelector('.faq-container');
+      if(faqContainer) {
+        // Optional: Clear existing FAQs to prevent old ones from showing
+        // faqContainer.innerHTML = ''; 
+      }
+      content.faqs.forEach((faq, i) => {
+        const index = i + 1;
+        // --- FIX IS HERE ---
+        const q = document.getElementById(`faq-q-${index}`);
+        const a = document.getElementById(`faq-a-${index}`);
+        // --- END FIX ---
+        if (q) q.innerHTML = faq.question;
+        if (a) a.innerHTML = faq.answer;
+      }
+                          );
+    }
+  }
+  if (heroContent) {
+    heroContent.classList.add('visible');
+  }
   // --- All original site functionality below this line ---
   let gtagLoaded = false;
   const loadGtagScript = () => {
@@ -1547,7 +1536,9 @@ gtag('config', 'AW-17509855816');
     const match = cleaned.match(/^(1)?(\d{3})(\d{3})(\d{4})$/);
     if (match) {
       const [, , areaCode, prefix, lineNumber] = match;
-      return `Call: (${areaCode}) ${prefix} - ${lineNumber}
+      return `Call: (${areaCode}
+) ${prefix}
+- ${lineNumber}
 `;
     }
     return phoneNumber;
@@ -1557,7 +1548,9 @@ gtag('config', 'AW-17509855816');
     const match = cleaned.match(/^(1)?(\d{3})(\d{3})(\d{4})$/);
     if (match) {
       const [, , areaCode, prefix, lineNumber] = match;
-      return `(${areaCode}) ${prefix} - ${lineNumber}
+      return `(${areaCode}
+) ${prefix}
+- ${lineNumber}
 `;
     }
     return phoneNumber;
@@ -1646,7 +1639,6 @@ gtag('config', 'AW-17509855816');
   };
   initDNI();
 }
-                         );
-</script>
+                         );</script>
 </body>
 </html>
