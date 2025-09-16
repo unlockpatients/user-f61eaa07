@@ -1352,27 +1352,18 @@ document.addEventListener("DOMContentLoaded", function() {
                               );
     }
     // Update FAQ Section
-    if (content.faqs && content.faqs.length > 0) {
-      const faqHeadline = document.getElementById('faq-headline');
-      if (faqHeadline && content.faqHeadline) faqHeadline.innerHTML = content.faqHeadline;
-      const faqContainer = document.querySelector('.faq-container');
-      if(faqContainer) {
-        // Optional: Clear existing FAQs to prevent old ones from showing
-        // faqContainer.innerHTML = ''; 
-      }
-      content.faqs.forEach((faq, i) => {
-        const index = i + 1;
-        // --- FIX IS HERE ---
-        const q = document.getElementById(`faq-q-${index}
-`);
-        const a = document.getElementById(`faq-a-${index}
-`);
-        // --- END FIX ---
-        if (q) q.innerHTML = faq.question;
-        if (a) a.innerHTML = faq.answer;
-      }
-                          );
-    }
+    if (content.faqs && content.faqs.length > 0) {
+      const faqHeadline = document.getElementById('faq-headline');
+      if (faqHeadline && content.faqHeadline) faqHeadline.innerHTML = content.faqHeadline;
+
+      content.faqs.forEach((faq, i) => {
+        const index = i + 1;
+        const q = document.getElementById(`faq-q-${index}`);
+        const a = document.getElementById(`faq-a-${index}`);
+        if (q) q.innerHTML = faq.question;
+        if (a) a.innerHTML = faq.answer;
+      });
+    }
   }
   if (heroContent) {
     heroContent.classList.add('visible');
