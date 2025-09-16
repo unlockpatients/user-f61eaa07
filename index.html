@@ -11,7 +11,7 @@
 <meta property="og:description" content="Caring for your children's health with a smile" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <link rel="preload" as="image" href="https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757618265915-1757612332640_1757609297992_1752799071660_hero_kids_smile_small.webp" imagesrcset="https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757618265915-1757612332640_1757609297992_1752799071660_hero_kids_smile_small.webp 600w, https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757618265915-1757612332640_1757609297992_1752799071660_hero_kids_smile_medium.webp 1201w" imagesizes="(max-width: 600px) 100vw, 50vw">
@@ -1303,77 +1303,78 @@ document.addEventListener("DOMContentLoaded", function() {
     const content = adgroupContent[adgroup];
     // 1. Update Title, Headlines, and Image Alt Text (Existing)
     document.title = content.title;
-            const headlineElement = document.getElementById('main-headline');
-            if (headlineElement) headlineElement.innerHTML = content.headline; // Use innerHTML to allow <br> tags
-            const subheadlineElement = document.getElementById('sub-headline');
-            if (subheadlineElement) subheadlineElement.innerHTML = content.subheadline;
-
-            // Update Image Alts
-            if (content.imageAlts) {
-                for (const [id, altText] of Object.entries(content.imageAlts)) {
-                    const img = document.getElementById(id);
-                    if (img) img.alt = altText;
-                }
-            }
-            
-            // **FIX FOR CTA TEXT**: Check if an element has the 'dni-phone' class. 
-            // If it does not, update its text. This prevents overwriting phone numbers.
-             if (content.ctaText) {
-                const ctaElements = ['cta-hero', 'cta-panel-1', 'cta-panel-2', 'cta-faq'];
-                ctaElements.forEach(id => {
-                    const el = document.getElementById(id);
-                    // Only update if it's NOT a DNI element
-                    if (el && !el.classList.contains('dni-phone')) {
-                        el.textContent = content.ctaText;
-                    }
-                });
-                const floatingCta = document.getElementById('cta-floating-text');
-                if (floatingCta) floatingCta.textContent = content.ctaText;
-            }
-
-
-            // Update Services Section
-            if (content.services) {
-                const servicesHeadline = document.getElementById('services-headline');
-                if (servicesHeadline && content.servicesHeadline) servicesHeadline.innerHTML = content.servicesHeadline;
-                const servicesSubheadline = document.getElementById('services-subheadline');
-                if (servicesSubheadline && content.servicesSubheadline) servicesSubheadline.innerHTML = content.servicesSubheadline;
-
-                content.services.forEach((service, i) => {
-                    const index = i + 1;
-                    const icon = document.getElementById(`service-icon-${index}`);
-                    // --- FIX IS HERE ---
-                    const h3 = document.getElementById(`service-h3-${index}`);
-                    const p = document.getElementById(`service-p-${index}`);
-                    // --- END FIX ---
-                    if (icon) icon.src = service.icon;
-                    if (h3) h3.innerHTML = service.title;
-                    if (p) p.innerHTML = service.description;
-                });
-            }
-
-            // Update FAQ Section
-            if (content.faqs && content.faqs.length > 0) {
-                const faqHeadline = document.getElementById('faq-headline');
-                if (faqHeadline && content.faqHeadline) faqHeadline.innerHTML = content.faqHeadline;
-                
-                const faqContainer = document.querySelector('.faq-container');
-                if(faqContainer) {
-                  // Optional: Clear existing FAQs to prevent old ones from showing
-                  // faqContainer.innerHTML = ''; 
-                }
-
-                content.faqs.forEach((faq, i) => {
-                    const index = i + 1;
-                    // --- FIX IS HERE ---
-                    const q = document.getElementById(`faq-q-${index}`);
-                    const a = document.getElementById(`faq-a-${index}`);
-                    // --- END FIX ---
-                    if (q) q.innerHTML = faq.question;
-                    if (a) a.innerHTML = faq.answer;
-                });
-            }
+    const headlineElement = document.getElementById('main-headline');
+    if (headlineElement) headlineElement.innerHTML = content.headline;
+    // Use innerHTML to allow <br> tags
+    const subheadlineElement = document.getElementById('sub-headline');
+    if (subheadlineElement) subheadlineElement.innerHTML = content.subheadline;
+    // Update Image Alts
+    if (content.imageAlts) {
+      for (const [id, altText] of Object.entries(content.imageAlts)) {
+        const img = document.getElementById(id);
+        if (img) img.alt = altText;
+      }
+    }
+    // **FIX FOR CTA TEXT**: Check if an element has the 'dni-phone' class. 
+    // If it does not, update its text. This prevents overwriting phone numbers.
+    if (content.ctaText) {
+      const ctaElements = ['cta-hero', 'cta-panel-1', 'cta-panel-2', 'cta-faq'];
+      ctaElements.forEach(id => {
+        const el = document.getElementById(id);
+        // Only update if it's NOT a DNI element
+        if (el && !el.classList.contains('dni-phone')) {
+          el.textContent = content.ctaText;
         }
+      }
+                         );
+      const floatingCta = document.getElementById('cta-floating-text');
+      if (floatingCta) floatingCta.textContent = content.ctaText;
+    }
+    // Update Services Section
+    if (content.services) {
+      const servicesHeadline = document.getElementById('services-headline');
+      if (servicesHeadline && content.servicesHeadline) servicesHeadline.innerHTML = content.servicesHeadline;
+      const servicesSubheadline = document.getElementById('services-subheadline');
+      if (servicesSubheadline && content.servicesSubheadline) servicesSubheadline.innerHTML = content.servicesSubheadline;
+      content.services.forEach((service, i) => {
+        const index = i + 1;
+        const icon = document.getElementById(`service-icon-${index}
+`);
+        // --- FIX IS HERE ---
+        const h3 = document.getElementById(`service-h3-${index}
+`);
+        const p = document.getElementById(`service-p-${index}
+`);
+        // --- END FIX ---
+        if (icon) icon.src = service.icon;
+        if (h3) h3.innerHTML = service.title;
+        if (p) p.innerHTML = service.description;
+      }
+                              );
+    }
+    // Update FAQ Section
+    if (content.faqs && content.faqs.length > 0) {
+      const faqHeadline = document.getElementById('faq-headline');
+      if (faqHeadline && content.faqHeadline) faqHeadline.innerHTML = content.faqHeadline;
+      const faqContainer = document.querySelector('.faq-container');
+      if(faqContainer) {
+        // Optional: Clear existing FAQs to prevent old ones from showing
+        // faqContainer.innerHTML = ''; 
+      }
+      content.faqs.forEach((faq, i) => {
+        const index = i + 1;
+        // --- FIX IS HERE ---
+        const q = document.getElementById(`faq-q-${index}
+`);
+        const a = document.getElementById(`faq-a-${index}
+`);
+        // --- END FIX ---
+        if (q) q.innerHTML = faq.question;
+        if (a) a.innerHTML = faq.answer;
+      }
+                          );
+    }
+  }
   // --- All original site functionality below this line ---
   let gtagLoaded = false;
   const loadGtagScript = () => {
@@ -1538,7 +1539,9 @@ gtag('config', 'AW-17509855816');
     const match = cleaned.match(/^(1)?(\d{3})(\d{3})(\d{4})$/);
     if (match) {
       const [, , areaCode, prefix, lineNumber] = match;
-      return `Call: (${areaCode}) ${prefix} - ${lineNumber}
+      return `Call: (${areaCode}
+) ${prefix}
+- ${lineNumber}
 `;
     }
     return phoneNumber;
@@ -1548,7 +1551,9 @@ gtag('config', 'AW-17509855816');
     const match = cleaned.match(/^(1)?(\d{3})(\d{3})(\d{4})$/);
     if (match) {
       const [, , areaCode, prefix, lineNumber] = match;
-      return `(${areaCode}) ${prefix} - ${lineNumber}
+      return `(${areaCode}
+) ${prefix}
+- ${lineNumber}
 `;
     }
     return phoneNumber;
