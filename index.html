@@ -1338,13 +1338,10 @@ document.addEventListener("DOMContentLoaded", function() {
       if (servicesSubheadline && content.servicesSubheadline) servicesSubheadline.innerHTML = content.servicesSubheadline;
       content.services.forEach((service, i) => {
         const index = i + 1;
-        const icon = document.getElementById(`service-icon-${index}
-`);
+        const icon = document.getElementById(`service-icon-${index}`);
         // --- FIX IS HERE ---
-        const h3 = document.getElementById(`service-h3-${index}
-`);
-        const p = document.getElementById(`service-p-${index}
-`);
+        const h3 = document.getElementById(`service-h3-${index}`);
+        const p = document.getElementById(`service-p-${index}`);
         // --- END FIX ---
         if (icon) icon.src = service.icon;
         if (h3) h3.innerHTML = service.title;
