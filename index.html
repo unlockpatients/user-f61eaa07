@@ -1355,10 +1355,8 @@ document.addEventListener("DOMContentLoaded", function() {
       if (faqHeadline && content.faqHeadline) faqHeadline.innerHTML = content.faqHeadline;
       content.faqs.forEach((faq, i) => {
         const index = i + 1;
-        const q = document.getElementById(`faq-q-${index}
-`);
-        const a = document.getElementById(`faq-a-${index}
-`);
+        const q = document.getElementById(`faq-q-${index}`);
+        const a = document.getElementById(`faq-a-${index}`);
         if (q) q.innerHTML = faq.question;
         if (a) a.innerHTML = faq.answer;
       }
