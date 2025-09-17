@@ -1604,7 +1604,7 @@ gtag('config', 'AW-17509855816');
     const attributionData = {
       referrer: document.referrer || 'direct'
     };
-    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_adgroup', 'utm_content', 'utm_term', 'gclid', 'network', 'device', 'adposition'].forEach(param => {
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_adgroup', 'adgroup', 'utm_content', 'utm_term', 'gclid', 'network', 'device', 'adposition'].forEach(param => {
       if (urlParams.has(param)) {
         attributionData[param] = urlParams.get(param);
       }
