@@ -10,20 +10,14 @@
   
   // This is your client-specific init call
   posthog.init('phc_csKKJTCYls1OKjZb9TzMccNWmqjsRJxMqwOzioyqJlW', {
-      // THIS IS THE CRITICAL CHANGE:
-      // The api_host points to your proxy to SEND data.
-      // The script itself is loaded from PostHog's CDN (in the code above).
-      api_host: 'https://vi3pjl262b.execute-api.us-west-2.amazonaws.com/prod',
-      
-      person_profiles: 'always',
-      session_recording: {
-          enabled: true,
-          maskAllInputs: true, // HIPAA CRITICAL
-      }
-  });
-
-  // This setting remains as a "belt and suspenders" security measure.
-  posthog.set_config({ ip: false });
+  api_host: 'https://vi3pjl262b.execute-api.us-west-2.amazonaws.com/prod',
+  person_profiles: 'always',
+  session_recording: {
+    enabled: true,
+    maskAllInputs: true,
+  },
+  ip: false // <== add here
+});
  
   // The URL testing parameter remains the same.
   const urlParams = new URLSearchParams(window.location.search);
