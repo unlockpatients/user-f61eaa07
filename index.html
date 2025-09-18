@@ -14,8 +14,8 @@
       person_profiles: 'always',
       session_recording: {
           enabled: true,
-          maskAllInputs: true, // HIPAA CRITICAL: Hides all user text inputs.
-          compression: false   // RELIABILITY FIX: Ensures replays work through the proxy.
+          maskAllInputs: true, // HIPAA CRITICAL
+          // The "compression: false" line is no longer needed
       }
   });
 
