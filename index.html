@@ -6,62 +6,24 @@
 <title>WonderKidz Pediatrics
 </title>
 <script>
-// ==========================
-// FULLY IMPLEMENTED FETCH CALL
-// ==========================
-
-// Replace with your API Gateway endpoint
-const API_URL = "https://vi3pjl262b.execute-api.us-west-2.amazonaws.com/prod";
-
-// Example payload to send
-const payload = {
-  foo: "bar",
-  timestamp: new Date().toISOString(),
-  source: "book.wonderkidzpediatrics.com"
-};
-
-// Utility: POST JSON to API Gateway
-async function postToApiGateway() {
-  try {
-    const response = await fetch(API_URL, {
-      method: "POST",
-      mode: "cors", // ensures CORS checks
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify(payload)
-    });
-
-    // Handle HTTP-level errors
-    if (!response.ok) {
-      const text = await response.text();
-      console.error("❌ API returned error:", response.status, text);
-      return { error: true, status: response.status, body: text };
-    }
-
-    // Parse JSON response
-    const data = await response.json();
-    console.log("✅ API response:", data);
-    return data;
-
-  } catch (err) {
-    console.error("🔥 Network/JS error:", err);
-    return { error: true, message: err.message };
-  }
-}
-
-// Auto-run when page loads
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("📡 Sending test request to API Gateway...");
-  postToApiGateway().then(result => {
-    if (result.error) {
-      console.warn("⚠️ API call failed. Check Lambda logs in CloudWatch for details.");
-    } else {
-      console.log("🎉 Success! Data received:", result);
-    }
+  !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(“.”);2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement(“script”)).type=“text/javascript”,p.crossOrigin=“anonymous”,p.async=!0,p.src=s.api_host.replace(“.i.posthog.com”,“-assets.i.posthog.com”)+“/static/array.js”,(r=t.getElementsByTagName(“script”)[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a=“posthog”,u.people=u.people||[],u.toString=function(t){var e=“posthog”;return”posthog”!==a&&(e+=“.”+a),t||(e+=” (stub)“),e},u.people.toString=function(){return u.toString(1)+“.people (stub)“},o=“init Te Ds js Re Os As capture Ke calculateEventProperties zs register register_once register_for_session unregister unregister_for_session Hs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty qs Ns createPersonProfile Bs Cs Ws opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Ls debug L Us getPageViewId captureTraceFeedback captureTraceMetric”.split(” “),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+  // This is your client-specific init call
+  posthog.init(‘phc_csKKJTCYls1OKjZb9TzMccNWmqjsRJxMqwOzioyqJlW’, {
+      api_host: "https://2zos55wlc9.execute-api.us-west-2.amazonaws.com/prod",
+      person_profiles: ‘always’,
+      session_recording: {
+            enabled: true,
+        }
   });
-});
+  // The ip: false setting is no longer strictly necessary, but it’s good practice
+  // to keep it as a “belt and suspenders” security measure.
+  posthog.set_config({ ip: false });
+  // The URL testing parameter remains the same
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get(‘testing’) === ‘true’) {
+    posthog.opt_out_capturing();
+    console.log(‘PostHog tracking opted out due to URL parameter.’);
+  }
 </script>
 <meta name="description" content="WonderKidz Pediatrics - Caring for your children's health with a smile" />
 <meta name="author" content="WonderKidz Pediatrics" />
