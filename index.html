@@ -15,7 +15,8 @@
       // ip: false
   });
 
-  // **** START: ADDED CODE BLOCK ****
+  posthog.set_config({ ip: false });
+  
   // This checks the URL for a 'testing=true' parameter
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.get('testing') === 'true') {
