@@ -11,7 +11,10 @@
   // This is your client-specific init call
   posthog.init('phc_csKKJTCYls1OKjZb9TzMccNWmqjsRJxMqwOzioyqJlW', {
       api_host: 'https://kdmmxcj2h8.execute-api.us-west-2.amazonaws.com/prod', 
-      person_profiles: 'always'
+      person_profiles: 'always',
+      session_recording: {
+            enabled: true,
+        }
   });
 
   // The ip: false setting is no longer strictly necessary, but it's good practice
