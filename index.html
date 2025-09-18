@@ -10,13 +10,15 @@
   
   // This is your client-specific init call
   posthog.init('phc_csKKJTCYls1OKjZb9TzMccNWmqjsRJxMqwOzioyqJlW', {
-      api_host: 'https://kdmmxcj2h8.execute-api.us-west-2.amazonaws.com/prod', 
-      person_profiles: 'always',
-      session_recording: {
-            enabled: true,
-        }
-  });
+    // api_host: 'https://YOUR_API_ID.execute-api.us-east-1.amazonaws.com/prod', // <-- TEMPORARILY COMMENT THIS OUT
+    api_host: 'https://us.i.posthog.com', // <-- TEMPORARILY ENABLE THIS
 
+    person_profiles: 'always',
+    session_recording: {
+        enabled: true,
+        maskAllInputs: true
+    }
+});
   // The ip: false setting is no longer strictly necessary, but it's good practice
   // to keep it as a "belt and suspenders" security measure.
   posthog.set_config({ ip: false });
