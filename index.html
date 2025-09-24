@@ -1555,8 +1555,7 @@ gtag('config', 'AW-17509855816');
     return null;
   };
   const setCookie = (name, value) => {
-    document.cookie = `${name}
-=${value || ""}; path=/; SameSite=Lax`;
+  document.cookie = `${name}=${value || ""}; path=/; SameSite=Lax`;
   };
   const formatPhoneNumberForDisplay = (phoneNumber) => {
     const cleaned = ('' + phoneNumber).replace(/\D/g, '');
