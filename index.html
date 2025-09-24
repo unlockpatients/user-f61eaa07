@@ -28,12 +28,12 @@
     // --- Preserve your original testing parameter logic ---
     if (urlParams.get('test') === 'true') {
       posthog.opt_out_capturing();
-      console.log('PostHog tracking opted out due to testing parameter.');
+      // console.log('PostHog tracking opted out due to testing parameter.');
     }
     
   } else {
     // If gclid does not exist, do nothing.
-    console.log("No GCLID found. PostHog will not be initialized.");
+    // console.log("No GCLID found. PostHog will not be initialized.");
   }
 </script>
 
@@ -1443,7 +1443,7 @@ gtag('config', 'AW-17509855816');
 `;
     document.head.appendChild(gtagScript);
     document.head.appendChild(inlineGtagScript);
-    console.log('Google Tag loaded.');
+    // console.log('Google Tag loaded.');
   };
   window.addEventListener('scroll', loadGtagScript, {
     once: true, passive: true }
