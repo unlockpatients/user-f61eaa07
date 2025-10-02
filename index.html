@@ -4,15 +4,7 @@
 <meta name="google-site-verification" content="kOvgnKfQK4IkiK4HFdHWm5aPfnRYQdB_-Yk3KWTSuz8" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self'; 
-    script-src 'self' 'unsafe-inline' https://*.posthog.com https://www.googletagmanager.com https://googleads.g.doubleclick.net https://saxd5sxddj.execute-api.us-west-2.amazonaws.com; 
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
-    img-src 'self' data: https://umgmhpwwysuwxxicoizw.supabase.co https://www.google.com https://cdn-icons-png.flaticon.com https://www.googleadservices.com; 
-    font-src 'self' https://fonts.gstatic.com; 
-    connect-src 'self' https://saxd5sxddj.execute-api.us-west-2.amazonaws.com https://www.google.com https://k00u9s0v2j.execute-api.us-west-2.amazonaws.com https://www.googleadservices.com; 
-    frame-src 'self' http://googleusercontent.com https://www.google.com https://www.googletagmanager.com;
-"> -->
+
 <title>WonderKidz Pediatrics</title>
 <link rel="icon" type="image/png" href="/favicon.png">
 
@@ -25,16 +17,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
 <link rel="preconnect" href="https://umgmhpwwysuwxxicoizw.supabase.co">
 
-<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"> -->
-<!-- <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"></noscript> -->
-<!-- <link rel="preload" as="image" href="https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757618265915-1757612332640_1757609297992_1752799071660_hero_kids_smile_small.webp" imagesrcset="..." imagesizes="..."> -->
-<!-- <link 
-  rel="preload" 
-  as="image" 
-  href="https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757618265915-1757612332640_1757609297992_1752799071660_hero_kids_smile_small.webp" 
-  imagesrcset="https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757618265915-1757612332640_1757609297992_1752799071660_hero_kids_smile_small.webp 600w, https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757618265915-1757612332640_1757609297992_1752799071660_hero_kids_smile_medium.webp 1200w"
-  imagesizes="(max-width: 978px) 100vw, 50vw"> -->
 
 <link 
   rel="preload" 
@@ -43,13 +25,32 @@
   imagesrcset="https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757618265915-1757612332640_1757609297992_1752799071660_hero_kids_smile_medium.webp 600w, https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757618265915-1757612332640_1757609297992_1752799071660_hero_kids_smile_medium.webp 1200w"
   imagesizes="(max-width: 978px) 100vw, 50vw"
     fetchpriority="high">
-<!-- <link 
-  rel="preload" 
-  as="image" 
-  imagesrcset="https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757618265915-1757612332640_1757609297992_1752799071660_hero_kids_smile_small.webp 600w, https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07-5fb8-4c74-84a3-4f4d09449366/user-f61eaa07/1757618265915-1757612332640_1757609297992_1752799071660_hero_kids_smile_medium.webp 1200w"
-  imagesizes="(max-width: 978px) 100vw, 50vw"> -->
+
 
 <style id="critical-css">
+font-face {
+  font-display: swap; /* This is crucial for performance */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/fonts/poppins-v24-latin-regular.woff2') format('woff2');
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/fonts/poppins-v24-latin-500.woff2') format('woff2');
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/fonts/poppins-v24-latin-700.woff2') format('woff2');
+}
   * { box-sizing: border-box; } body { margin: 0; } :root {
   /* --- Existing variables --- */
   --primary-color: #1fa0da;
