@@ -1388,7 +1388,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const img = document.getElementById(id);
         if (img) img.alt = altText;
       }
-    }, 0); // to fix the LCP including the js
+    }
     // **FIX FOR CTA TEXT**: Check if an element has the 'dni-phone' class. 
     // If it does not, update its text. This prevents overwriting phone numbers.
     if (content.ctaText) {
@@ -1437,6 +1437,7 @@ document.addEventListener("DOMContentLoaded", function() {
                           );
     }
   }
+}, 0); // to fix the LCP including the js
   // --- All original site functionality below this line ---
   const faqQuestions = document.querySelectorAll('.faq-question');
   if (faqQuestions.length > 0) {
