@@ -1581,7 +1581,7 @@ const adgroupContent = {
         { question: "Does my child need two doses of the flu shot?", answer: "Children between 6 months and 8 years old who are getting vaccinated for the first time, or who have only previously had one dose, may need two doses spaced four weeks apart. We will advise you based on your child's history." }
     ]
   },
-  'childrens-flu-shot-clinic': {
+ 'childrens-flu-shot-clinic': {
   title: "Children's Flu Shot Clinic | WonderKidz Pediatrics",
   headline: "Children’s Flu Shot Clinic Near You",
   subheadline: "Protect your child this flu season with a quick and easy flu vaccine. Safe, fast, and pediatrician-recommended.",
@@ -1591,7 +1591,8 @@ const adgroupContent = {
   services: [
     { title: "Kid-Friendly Environment", description: "Our gentle, caring staff makes flu shots quick and comfortable for kids of all ages.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/syringe_kids.webp" },
     { title: "Fast & Convenient Appointments", description: "Schedule online or walk in for a same-day flu shot — no long waits.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/calendar_clock.webp" },
-    { title: "Trusted Pediatric Care", description: "Flu shots administered by pediatric professionals who know your child’s needs best.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/doctor_heart.webp" }
+    { title: "Trusted Pediatric Care", description: "Flu shots administered by pediatric professionals who know your child’s needs best.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/doctor_heart.webp" },
+    { title: "Comforting Environment", description: "Our friendly team helps make your child’s vaccination visit calm and positive.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/hands_heart.webp" }
   ],
   faqHeadline: "Children’s Flu Shot FAQs",
   faqs: [
@@ -1611,7 +1612,8 @@ const adgroupContent = {
   services: [
     { title: "Comfort-Focused Approach", description: "Our staff is trained to keep your toddler calm and comfortable during their flu shot.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/baby_heart.webp" },
     { title: "Quick Appointments", description: "We offer same-day flu shot appointments for toddlers — no need to wait.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/clock_fast.webp" },
-    { title: "Trusted by Parents", description: "Families choose WonderKidz for our caring approach and expertise in toddler care.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/parents_kids.webp" }
+    { title: "Trusted by Parents", description: "Families choose WonderKidz for our caring approach and expertise in toddler care.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/parents_kids.webp" },
+    { title: "Soothing Environment", description: "We create a calm, welcoming space to help toddlers feel safe during their visit.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/hands_heart.webp" }
   ],
   faqHeadline: "Toddler Flu Shot FAQs",
   faqs: [
@@ -1631,7 +1633,8 @@ const adgroupContent = {
   services: [
     { title: "Pediatrician-Guided Vaccination", description: "Flu shots administered by experienced pediatricians who specialize in infant care.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/doctor_baby.webp" },
     { title: "Safe & Effective", description: "We use CDC-approved vaccines suitable for infants 6 months and older.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/shield_check.webp" },
-    { title: "Personalized Guidance", description: "We’ll discuss your baby’s health history and answer any vaccination questions you have.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/chat_doctor.webp" }
+    { title: "Personalized Guidance", description: "We’ll discuss your baby’s health history and answer any vaccination questions you have.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/chat_doctor.webp" },
+    { title: "Comforting Experience", description: "Our caring team provides a calm, supportive setting for your baby’s first flu shot.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/hands_heart.webp" }
   ],
   faqHeadline: "Infant Flu Shot FAQs",
   faqs: [
