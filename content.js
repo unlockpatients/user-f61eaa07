@@ -1581,7 +1581,66 @@ const adgroupContent = {
         { question: "Does my child need two doses of the flu shot?", answer: "Children between 6 months and 8 years old who are getting vaccinated for the first time, or who have only previously had one dose, may need two doses spaced four weeks apart. We will advise you based on your child's history." }
     ]
   },
-  // ... (All other keywords from the flu and newborn groups would follow this same pattern) ...
+  'childrens-flu-shot-clinic': {
+  title: "Children's Flu Shot Clinic | WonderKidz Pediatrics",
+  headline: "Children’s Flu Shot Clinic Near You",
+  subheadline: "Protect your child this flu season with a quick and easy flu vaccine. Safe, fast, and pediatrician-recommended.",
+  ctaText: "Book a Flu Shot Appointment",
+  servicesHeadline: "Why Choose WonderKidz for Flu Shots?",
+  servicesSubheadline: "We make getting your child vaccinated simple and stress-free.",
+  services: [
+    { title: "Kid-Friendly Environment", description: "Our gentle, caring staff makes flu shots quick and comfortable for kids of all ages.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/syringe_kids.webp" },
+    { title: "Fast & Convenient Appointments", description: "Schedule online or walk in for a same-day flu shot — no long waits.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/calendar_clock.webp" },
+    { title: "Trusted Pediatric Care", description: "Flu shots administered by pediatric professionals who know your child’s needs best.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/doctor_heart.webp" }
+  ],
+  faqHeadline: "Children’s Flu Shot FAQs",
+  faqs: [
+    { question: "When should my child get a flu shot?", answer: "We recommend getting a flu shot as soon as the annual vaccine becomes available — typically in early fall." },
+    { question: "Is the flu shot safe for kids?", answer: "Yes, flu vaccines are safe and recommended by the CDC for children 6 months and older." },
+    { question: "Do you accept insurance?", answer: "Yes, most insurance plans cover annual flu vaccines. Contact our office to confirm your coverage." }
+  ]
+},
+
+'flu-shot-for-toddlers-near-me': {
+  title: "Flu Shot for Toddlers Near Me | WonderKidz Pediatrics",
+  headline: "Looking for a Flu Shot for Your Toddler?",
+  subheadline: "Keep your toddler healthy and protected this flu season with an easy, stress-free flu shot visit.",
+  ctaText: "Schedule a Toddler Flu Shot",
+  servicesHeadline: "Gentle, Toddler-Friendly Care",
+  servicesSubheadline: "Our pediatric team specializes in making vaccinations a positive experience for little ones.",
+  services: [
+    { title: "Comfort-Focused Approach", description: "Our staff is trained to keep your toddler calm and comfortable during their flu shot.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/baby_heart.webp" },
+    { title: "Quick Appointments", description: "We offer same-day flu shot appointments for toddlers — no need to wait.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/clock_fast.webp" },
+    { title: "Trusted by Parents", description: "Families choose WonderKidz for our caring approach and expertise in toddler care.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/parents_kids.webp" }
+  ],
+  faqHeadline: "Toddler Flu Shot FAQs",
+  faqs: [
+    { question: "At what age should my child start getting flu shots?", answer: "The CDC recommends annual flu shots for all children 6 months and older." },
+    { question: "What if my toddler is scared of shots?", answer: "Our team uses distraction techniques and a calm environment to make the experience easier for your child." },
+    { question: "Can I book online?", answer: "Yes! You can book your toddler’s flu shot online or by calling our office directly." }
+  ]
+},
+
+'infant-flu-shot': {
+  title: "Infant Flu Shot | WonderKidz Pediatrics",
+  headline: "Protect Your Baby with an Infant Flu Shot",
+  subheadline: "Flu protection starts early. Schedule your baby’s first flu shot with our trusted pediatric team.",
+  ctaText: "Book Infant Flu Shot",
+  servicesHeadline: "Expert Infant Care",
+  servicesSubheadline: "Gentle, safe, and recommended for babies 6 months and older.",
+  services: [
+    { title: "Pediatrician-Guided Vaccination", description: "Flu shots administered by experienced pediatricians who specialize in infant care.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/doctor_baby.webp" },
+    { title: "Safe & Effective", description: "We use CDC-approved vaccines suitable for infants 6 months and older.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/shield_check.webp" },
+    { title: "Personalized Guidance", description: "We’ll discuss your baby’s health history and answer any vaccination questions you have.", icon: "https://umgmhpwwysuwxxicoizw.supabase.co/storage/v1/object/public/websites/f61eaa07/icons/chat_doctor.webp" }
+  ],
+  faqHeadline: "Infant Flu Shot FAQs",
+  faqs: [
+    { question: "When can my baby get their first flu shot?", answer: "Infants can receive their first flu shot at 6 months of age." },
+    { question: "Does my baby need two doses?", answer: "Babies receiving the flu shot for the first time need two doses at least four weeks apart." },
+    { question: "Are infant flu shots safe?", answer: "Yes, flu shots for infants are carefully tested and recommended by pediatric health authorities worldwide." }
+  ]
+},
+
   'pediatrician-for-my-newborn': {
     title: "Pediatrician for My Newborn | WonderKidz Pediatrics | Hollywood, FL",
     headline: "Find a Trusted Pediatrician for My Newborn",
