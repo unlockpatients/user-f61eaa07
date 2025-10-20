@@ -11,6 +11,11 @@
       ],
       "destination": "/:lp",
       "permanent": false
+    },
+    {
+      "source": "/redirect",
+      "destination": "/",
+      "status": 302
     }
   ]
 }
