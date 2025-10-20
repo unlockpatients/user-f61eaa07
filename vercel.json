@@ -15,7 +15,7 @@
     {
       "source": "/redirect",
       "destination": "/",
-      "status": 302
+      "permanent": false
     }
   ]
 }
