@@ -17,5 +17,11 @@
       "destination": "/",
       "permanent": false
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/"
+    }
   ]
 }
