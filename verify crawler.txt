@@ -1,0 +1,44 @@
+https://chatgpt.com/c/68f27349-bf1c-8331-a525-f6b417d2ef5d
+
+test: curl -I "https://mydomain.com/redirect?adgroupid=123"
+
+If everything is configured correctly, the response will look something like this:
+
+HTTP/2 302 
+location: https://mydomain.com/landing-newborns
+cache-control: public, max-age=0, must-revalidate
+server: Vercel
+
+
+Meaning:
+
+HTTP/2 302 → temporary server-side redirect (perfect for Google Ads)
+
+location: header → points directly to your final landing page
+
+server: Vercel → confirms it’s handled at the edge before any HTML is rendered
+
+That’s exactly how Google AdsBot wants it.
+
+
+---
+⚠️ If You See Something Like:
+HTTP/2 200 OK
+content-type: text/html
+
+
+or
+
+<meta http-equiv="refresh" ...>
+
+
+That means the redirect is happening client-side (e.g., via JavaScript or meta refresh), which Google AdsBot will not follow — and that would hurt your landing page experience.
+
+🧠 Pro Tip — Simulate Google’s Crawler
+
+You can even spoof the AdsBot user agent to double-check how Google sees it:
+
+curl -I -A "AdsBot-Google" "https://mydomain.com/redirect?adgroupid=123"
+curl -I -A "AdsBot-Google" "https://book.wonderkidzpediatrics.com/pediatrician-near-me"
+
+If the headers are the same (shows HTTP 302 and a valid Location:), then you’re golden — AdsBot will successfully follow it and evaluate the final page normally.
