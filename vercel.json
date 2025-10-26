@@ -14,6 +14,17 @@
     },
     {
       "source": "/redirect",
+      "has": [
+        {
+          "type": "query",
+          "key": "page"
+        }
+      ],
+      "destination": "/:page",
+      "permanent": false
+    },
+    {
+      "source": "/redirect",
       "destination": "/",
       "permanent": false
     }
