@@ -4,10 +4,7 @@
     {
       "source": "/redirect",
       "has": [
-        {
-          "type": "query",
-          "key": "lp"
-        }
+        { "type": "query", "key": "lp" }
       ],
       "destination": "/:lp",
       "permanent": false
@@ -15,10 +12,23 @@
     {
       "source": "/redirect",
       "has": [
-        {
-          "type": "query",
-          "key": "page"
-        }
+        { "type": "query", "key": "page" }
+      ],
+      "destination": "/:page",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        { "type": "query", "key": "lp" }
+      ],
+      "destination": "/:lp",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        { "type": "query", "key": "page" }
       ],
       "destination": "/:page",
       "permanent": false
