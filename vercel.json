@@ -41,6 +41,10 @@
   ],
   "rewrites": [
     {
+      "source": "/:page((?!\\{ignore\\}).*)",
+      "destination": "/:page"
+    },
+    {
       "source": "/:path*",
       "destination": "/"
     }
