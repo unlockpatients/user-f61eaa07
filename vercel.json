@@ -41,7 +41,7 @@
   ],
   "rewrites": [
     {
-      "source": "/:page((?!\\{ignore\\}).*)",
+      "source": "/:page((?!%7Bignore%7D).*)",
       "destination": "/:page"
     },
     {
