@@ -41,6 +41,10 @@
   ],
   "rewrites": [
     {
+      "source": "/:basePath*%7Bignore%7D",
+      "destination": "/:basePath*"
+    },
+    {
       "source": "/:page((?!%7Bignore%7D).*)",
       "destination": "/:page"
     },
